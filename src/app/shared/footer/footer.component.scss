@@ -1,0 +1,124 @@
+.footer_container {
+  background-color: aqua;
+  margin-top: 10%;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    to right,
+    #861b2e,
+    #9d1c33,
+    #b51c38,
+    #cd1b3d,
+    #e61a41
+  );
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-column-gap: 300px;
+}
+.footer_container_left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 10%;
+  margin-top: 10%;
+  justify-items: start;
+}
+.container_Top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+.ligne {
+  width: 90%;
+  border-color: white;
+}
+.ligne_small {
+  width: 60%;
+  border-color: white;
+}
+.container_Top_right {
+  display: grid;
+  grid-gap: 1em;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+.container_Top_left {
+  color: white;
+  display: grid;
+}
+.button {
+  background-color: transparent;
+  width: 50%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  border: 0.75px solid #ffffff;
+}
+.container_meduim {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5em;
+}
+@media only screen and (max-width: 800px) {
+  .footer_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .footer_container_right {
+    margin-left: 30px;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    font-family: "Montserrat", sans-serif;
+  }
+ 
+}
+.container_meduim_right {
+  input{width: 80%;}
+  display: grid;
+  color: white;
+}
+.input {
+  background-color: transparent;
+  color: rgb(130, 26, 26);
+  border: 0.75px solid transparent;
+  border-bottom: 0.75px solid white;
+}
+.container_meduim_left {
+  color: white;
+
+  font-family: "Montserrat", sans-serif;
+}
+.footer_container_right {
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  font-family: "Montserrat", sans-serif;
+}
+.container_logo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.container_contact_and_services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Montserrat", sans-serif;
+  grid-column-gap: 2em;
+}
+.container_contact {
+  color: white;
+}
+.container_services {
+  color: white;
+}
+
+

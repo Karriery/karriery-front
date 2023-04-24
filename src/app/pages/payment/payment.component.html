@@ -1,0 +1,75 @@
+<app-spinner *ngIf="spinner"></app-spinner>
+
+<div>
+  <div class="paiment">
+    <div class="paiment-left">
+      <div class="left-head">
+        <div class="left-head-logo">
+          <img
+            src="../../../assets/logo_red.png"
+            style="height: 50px; margin-top: 5px"
+            alt=""
+          />
+          <h2>{{ reservation?.packId.price }}.000 TND</h2>
+        </div>
+      </div>
+      <div class="left-body">
+        <p>
+          Greetings
+          <span
+            >{{ reservation?.formUser.firstName }}
+            {{ reservation?.formUser.lastName }}</span
+          >!
+        </p>
+        <h1>
+          you will pay <span>{{ reservation?.packId.price }}.000</span> TND for
+          <span>{{ reservation?.packId?.title }}</span> Pack
+        </h1>
+        <p>
+          You can Here select the mothod of payment, so you can use paying by
+          Konneck, Post or you can meet one of our agents.
+        </p>
+      </div>
+      <div class="left-footer">
+        <button
+          type="button"
+          class="btn btn-outline-secondary konnect"
+          (click)="payOnline()"
+        >
+          Konnect / credit card
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-outline-secondary post"
+          (click)="uploadPhoto()"
+        >
+          Post transaction
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-outline-secondary agent"
+          (click)="seeLoc()"
+        >
+          Meet with agent
+        </button>
+      </div>
+    </div>
+    <div class="paiment-right">
+      <img
+        src="../../../assets/undraw_Credit_card_re_blml 1.png"
+        style="width: 90%"
+        alt=""
+      />
+      <p>
+        <span style="color: #e81a41; font-weight: bold">Karriery</span> Payment
+        Confirmation, this Request will be submited with this
+        <a target="_blank" style="text-decoration: none"
+          >Resume <i class="fa fa-download" style="margin-left: 3px"></i
+        ></a>
+        Make sure to submit all the right data to have smoother experience
+      </p>
+    </div>
+  </div>
+</div>

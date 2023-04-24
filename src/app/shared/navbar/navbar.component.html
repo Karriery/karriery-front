@@ -1,0 +1,74 @@
+<!--<div class="header">
+  <div class="navBar">
+    <div class="logo">
+      <img src="./../../../assets/logo_red.png" alt="logo" />
+    </div>
+    <div class="rightSide">
+      <div class="divElem">à propos de nous</div>
+      <div class="divElem">Nos Packs</div>
+      <div class="divElem">Témoignage</div>
+      <div class="divElem">Contact</div>
+      <div class="contPhone">
+        <img src="./../../../assets/phone.png" alt="" />
+        +216 58 065 605
+      </div>
+    </div>
+    <div class="drop-down-toggle">
+      <img
+        src="https://www.pngitem.com/pimgs/m/30-302949_menu-bar-icon-png-transparent-png.png"
+        style="width: 20px"
+        (click)="toggle()"
+        alt=""
+      />
+    </div>
+    <div class="close">
+      <img
+        src="https://img.freepik.com/free-icon/x-symbol_318-1407.jpg?w=2000"
+        style="width: 20px"
+        (click)="toggle()"
+        alt=""
+      />
+    </div>
+  </div>
+</div>-->
+<div class="navbar-container" (scroll)="onScroll($event)">
+  <div class="divbar">
+    <div class="logo">
+      <img src="./../../../assets/logo_red.png" alt="logo" />
+    </div>
+
+    <div class="divbar-items-container">
+      <div class="list-unstyled divItem" (click)="toApropos()">
+        à propos de nous
+      </div>
+
+      <div (click)="toPacks()">Nos Packs</div>
+
+      <div (click)="toTemoignage()">En savoir plus</div>
+
+      <div (click)="toContact()">Contact</div>
+
+      <div class="contPhone">
+        <img src="./../../../assets/phone.png" alt="" />
+        +216 58 065 605
+      </div>
+    </div>
+
+    <div class="drop-down-toggle">
+      <img
+        src="https://www.pngitem.com/pimgs/m/30-302949_menu-bar-icon-png-transparent-png.png"
+        style="width: 20px"
+        (click)="toggle()"
+        alt=""
+      />
+    </div>
+    <div class="close">
+      <img
+        src="https://img.freepik.com/free-icon/x-symbol_318-1407.jpg?w=2000"
+        style="width: 20px"
+        (click)="toggle()"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

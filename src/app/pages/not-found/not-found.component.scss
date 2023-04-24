@@ -1,0 +1,9 @@
+.not_found {
+  width: 70%;
+  height: 80vh;
+  background-image: url(./../../../assets/404.png);
+  background-size: cover;
+  display: grid;
+  place-self: center;
+  margin: 0 auto;
+}

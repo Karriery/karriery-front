@@ -1,0 +1,255 @@
+.header {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 auto;
+}
+
+.navBar {
+  display: flex;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+.rightSide {
+  margin: 0 auto;
+  margin-right: 0;
+  float: right !important;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+}
+.divElem {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.rightSide div {
+  margin-right: 30px;
+}
+.contPhone {
+  padding: 3px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right !important;
+  margin-right: 0 !important;
+  color: #c61b3b;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 5rem;
+}
+.contPhone img {
+  margin-right: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .divElem {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+  }
+  .rightSide {
+    margin: 0 auto;
+    float: right !important;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+  }
+}
+//
+
+.drop-down-toggle {
+  display: none;
+}
+.dropdown {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  overflow: hidden;
+  justify-items: center;
+  transition: 1s;
+  height: 50vh !important ;
+}
+.dropdown img {
+  padding: 0;
+}
+.dropdown .rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1em;
+  overflow: hidden;
+  padding: 0;
+}
+.close {
+  display: none;
+}
+
+.dropdown .drop-down-toggle {
+  display: none;
+}
+
+.dropdown .close {
+  display: block;
+}
+
+////////
+///
+///
+///
+* {
+  font-family: "Montserrat";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  margin-left:5%;
+  display: grid;
+}
+.navbar-container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 auto;
+
+}
+.scrolled {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.divbar {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+  transition: 1s;
+  position: sticky;
+
+  .login-button {
+    border-radius: 30px;
+    background-color: #e81a41;
+    margin-right: 40px;
+  }
+}
+
+
+.divbar-items-container {
+  display: flex;
+  margin: 0 auto;
+  place-self: start;
+  justify-content: space-between !important;
+  text-align:center;
+  margin-top: 50px;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  color: #262E2E;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-left:20%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contPhone{
+  font-family: "Montserrat";
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.drop-down-toggle {
+  display: none;
+  margin-right: 50px;
+
+}
+.dropdown {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  overflow: hidden;
+  justify-items: center;
+  transition: 1s;
+  height: 50vh !important ;
+}
+.dropdown img {
+  padding: 0;
+}
+.dropdown .divbar-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1em;
+  overflow: hidden;
+  padding: 0;
+}
+.close {
+  display: none;
+}
+
+.dropdown .drop-down-toggle {
+  display: none;
+
+}
+
+.dropdown .close {
+  display: block;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .divbar-items-container {
+  
+    width: 90%;
+    font-size: 18px;
+  
+  }
+
+}
+@media screen and (max-width: 1250px) {
+  .contPhone {
+    display: none;
+  }
+  .divbar-items-container {
+    display: none;
+  }
+  .drop-down-toggle {
+    display: block;
+  }
+  .login-button {
+    margin-left: 40px;
+  }
+  .divbar-items-container {
+    margin: 0 auto;
+  }
+}

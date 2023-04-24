@@ -1,0 +1,91 @@
+<div [ngClass]="'footer_container'">
+  <div [ngClass]="'footer_container_left'">
+    <div [ngClass]="'container_logo'">
+      <img src="./../../../assets/logo_white.png" />
+      <p>
+        Avec notre expertise, votre carrière<br />
+        sera entre de bonnes mains.
+      </p>
+    </div>
+    <div [ngClass]="'container_contact_and_services'">
+      <div [ngClass]="'container_services'">
+        <strong>Nos services</strong>
+        <br />
+        <hr [ngClass]="'ligne_small'" />
+        <br />
+        <p>Amélioration de <br />votre CV</p>
+        <p>
+          Maximisez vos opportunités<br />
+          d'embauche
+        </p>
+        <p>
+          Personalisation de vos<br />
+          candidatures
+        </p>
+      </div>
+      <div [ngClass]="'container_contact'">
+        <strong>Contact</strong>
+        <br />
+        <hr [ngClass]="'ligne_small'" />
+        <br />
+        <p>info@karriery.com</p>
+        <p>M+216 58 065 605</p>
+        <p>Contactez-nous</p>
+      </div>
+    </div>
+  </div>
+  <div [ngClass]="'footer_container_right'">
+    <div [ngClass]="'container_Top'">
+      <div [ngClass]="'container_Top_left'">
+        <div></div>
+        <div>
+          <p>
+            Notre plateforme offre des services<br />
+            pour améliorer votre CV, écrire une<br />
+            lettre de motivation percutante, vous<br />
+            préparer à l'entretien et optimiser <br />
+            votre profil LinkedIn.
+          </p>
+          <br /><br />
+
+          <p>facebook | Instagramme | LinkedIn</p>
+        </div>
+      </div>
+      <div [ngClass]="'container_Top_right'">
+        <div style="cursor: pointer" (click)="toHeader()">Accueil</div>
+        <div style="cursor: pointer" (click)="toApropos()">
+          à propos de nous
+        </div>
+        <div style="cursor: pointer" (click)="toPacks()">Nos Packs</div>
+        <div style="cursor: pointer" (click)="toContact()">Contact</div>
+        <div style="cursor: pointer" (click)="toPacks()">
+          Booster Votre Candidature
+        </div>
+      </div>
+    </div>
+    <hr [ngClass]="'ligne'" />
+    <div [ngClass]="'container_meduim'">
+      <div [ngClass]="'container_meduim_left'">
+        <strong>Rester informé(e) </strong>
+        <p>Abonnez-vous à notre newsletter <br />hebdomadaire.</p>
+      </div>
+      <div [ngClass]="'container_meduim_right'">
+        <input
+          [ngClass]="'input'"
+          type="email"
+          style="color: white"
+          placeholder="Email"
+          #email
+        />
+        <br />
+        <button [ngClass]="'button'" (click)="create(email.value)">
+          Abonner
+        </button>
+      </div>
+    </div>
+    <hr [ngClass]="'ligne'" />
+    <div>
+      <p>2023 By Karriery</p>
+    </div>
+  </div>
+</div>

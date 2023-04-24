@@ -1,0 +1,16 @@
+<div class="title">
+  <h1>Importez votre CV et agissez dès maintenant.</h1>
+  <hr />
+  <br />
+  <h2>Karriery s’occupe de tous !</h2>
+</div>
+<div class="steps">
+  <div *ngFor="let e of list">
+    <app-process-step
+      number="{{ e.number }}"
+      title="{{ e.title }}"
+      paragraph="{{ e.paragraph }}"
+      color="{{ e.color }}"
+    ></app-process-step>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div id="header" [ngClass]="'main_container'">
+  <div [ngClass]="'header_container'">
+    <div [ngClass]="'header_container_left'">
+      <div class="title-header">
+        <h1>
+          Êtes-vous prêt à donner un coup de pouce à votre carrière
+          professionnelle ?
+        </h1>
+      </div>
+      <div class="sub-header">
+        <h2>
+          Notre plateforme offre des services pour améliorer votre
+          <span>CV</span>, écrire
+          <span>une lettre de motivation</span> percutante, vous préparer à
+          l'entretien et optimiser votre <span>profil LinkedIn.</span>
+        </h2>
+        <button class="call-to-action" (click)="action()">
+          <a>Planifiez votre session avec un expert dès aujourd'hui!</a>
+        </button>
+      </div>
+    </div>
+    <div [ngClass]="'header_container_right'"></div>
+  </div>
+  <div [ngClass]="'steps'">
+    <app-steps></app-steps>
+  </div>
+</div>
