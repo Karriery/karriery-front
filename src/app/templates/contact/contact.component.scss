@@ -1,8 +1,7 @@
 
 .center {
-
     margin-top: 400px;
-    height: auto;
+    min-height: auto;
     display: grid;
     justify-items: center;
     text-align: center;
@@ -45,14 +44,32 @@
    }
    @media screen and (max-width: 1300px) {
     .center{
-      margin-top: 500px;
+      margin-top: 600px;
       h1 { font-size: 36px;}
     }
    }
    @media screen and (max-width: 875px) {
     .center{
-      margin-top: 650px;
+      margin-top: 700px;
       h1 { font-size: 28px;}
     }
    }  
+   @media screen and (max-width: 450px) {
+    .center{
+     
+      h1 { font-size: 28px;}
+      button {
+        box-sizing: border-box;
+    width: 340px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1.5px solid #E81A41;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+   
+      }
+    }
+  }
 

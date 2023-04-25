@@ -8,11 +8,11 @@
     #cd1b3d,
     #e61a41
   );
-  height: auto;
+  min-height: auto;
   }
   .ilBig {
    
-    height: 100vh;
+    min-height: 100vh;
   }
   
   .pricing {
@@ -166,7 +166,7 @@
   
   @media screen and (max-width: 1300px) {
     .ilBig {
-      height: 170vh;
+      min-height: 170vh;
     }
     .head-pricing {
       width: 100%;
@@ -200,7 +200,7 @@
    }
   @media screen and (max-width: 870px) {
     .ilBig {
-      height: 230vh;
+      min-height: 230vh;
     }
     .head-pricing {
       width: 100%;
@@ -231,3 +231,7 @@
     }
    }
   
+   @media screen and (max-width: 435px) {
+   .button-76 {
+    
+  }}

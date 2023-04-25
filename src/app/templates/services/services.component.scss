@@ -1,7 +1,6 @@
 .process-steps {
     width: 95%;
-    height: 700px;
-    margin: 0 auto;
+    min-height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     align-items: center;
@@ -11,7 +10,7 @@
       display: grid;
       grid-template-columns: 1fr;
       justify-items: start;
-      height: 400px;
+      min-height: 400px;
       h1 {
         width: 100%;
         height: auto;
@@ -48,7 +47,7 @@
       button {
         box-sizing: border-box;
         width: 277.82px;
-        height: 57px;
+        min-height: 57px;
         background: #ffffff;
         border: 1.5px solid #e81a41;
         border-radius: 5px;
@@ -64,5 +63,24 @@
       display: grid;
       grid-gap: 1em;
       
+    }
+  }
+  @media screen and (max-width: 530px) {
+    .process-steps {
+  margin-left: -11%;}
+  }
+  @media screen and (max-width: 470px) {
+    .process-steps {
+  margin-left: -16%;
+}
+  }
+  @media screen and (max-width: 450px) {
+    .process-steps {
+  margin-left: -20%;
+ }
+  }
+  @media screen and (max-width: 435px) {
+    .process-steps {
+      width: 80%;
     }
   }

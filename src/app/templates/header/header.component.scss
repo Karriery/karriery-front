@@ -1,21 +1,16 @@
 .main_container {
- 
   display: grid;
   grid-template-rows: 3fr 1fr;
   width: 100%;
-  height: 80vh;
+  min-height: 100vh;
 }
 .header_container {
   width: 100%;
-  height: 100%;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.header_container_right{
-  margin-top: -60px;
-  width: 65%;
-  height: 127%;
+.header_container_right {
+  width: 64%;
   display: grid;
   justify-self: end;
   background-image: url(./../../../assets/application.png);
@@ -24,7 +19,7 @@
 }
 .header_container_left {
   width: 80%;
-  height: 70%;
+  padding-top: 5%;
   padding-left: 20%;
 }
 .title-header {
@@ -96,86 +91,71 @@
     a {
       color: #e81a41;
     }
-      
   }
 }
-
-
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
 @media screen and (max-width: 1300px) {
   .header_container {
-
     grid-template-columns: 1fr 2fr;
   }
-  .header_container_right{
+  .header_container_right {
     margin-top: -50px;
     width: 90%;
     height: 110%;
-  
   }
   .header_container_left {
-
     padding-left: 10%;
   }
-  
 }
 @media screen and (max-width: 1260px) {
   .header_container {
-
     grid-template-columns: 1fr 2fr;
   }
-  .header_container_right{
+  .header_container_right {
     margin-top: -50px;
     width: 90%;
     height: 105%;
-  
   }
   .header_container_left {
-
     padding-left: 10%;
   }
-  
 }
 @media screen and (max-width: 1200px) {
+  .main_container {
+    height: 85%;
+    margin-bottom: 10%;
+  }
+
   .header_container {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     text-align: center;
   }
-  .header_container_right{
+  .header_container_right {
     display: none;
   }
   .header_container_left {
-   
-    padding:0 auto;
+    padding: 0 auto;
     margin: 0 auto;
   }
   .sub-header {
     display: grid;
     width: 80%;
     place-items: center;
-    grid-gap:1em ;
-    h2 {text-align: center;}
-    .call-to-action{
-      margin-bottom: 70px;
+    grid-gap: 1em;
+    h2 {
+      text-align: center;
     }
   }
-
-    .main_container {
-      height:100%;
-    }
-  
 }
 
-
 @media screen and (max-width: 970px) {
+  .main_container {
+    margin-bottom: 20%;
+  }
   .title-header {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     width: 80%;
     height: auto;
     h1 {
@@ -191,9 +171,8 @@
         width: 100%;
         height: auto;
         font-size: 18px;
-        
       }
     }
   }
-  
 }
+
