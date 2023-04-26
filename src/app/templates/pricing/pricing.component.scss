@@ -104,6 +104,23 @@
     
     }
   }
+  .check {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    justify-items: start;
+    grid-gap: 1em;
+    margin-bottom: 20px;
+    text-align: start;
+    p {
+      margin: 0;
+    }
+    span{
+      font-weight: bolder;
+    }
+  }
   /* CSS */
   .button-76 {
     background-color: #cf245f;

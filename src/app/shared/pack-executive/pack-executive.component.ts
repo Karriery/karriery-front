@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-pack-executive',
-  templateUrl: './pack-executive.component.html',
-  styleUrls: ['./pack-executive.component.css']
+  selector: "app-pack-executive",
+  templateUrl: "./pack-executive.component.html",
+  styleUrls: ["./pack-executive.component.scss"],
 })
-export class PackExecutiveComponent {
-
-}
+export class PackExecutiveComponent {}

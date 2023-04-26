@@ -1,41 +1,7 @@
 <app-navbar></app-navbar>
 <div [ngClass]="'readMe_container'">
   <div [ngClass]="'container_GROWTH_PACK'">
-    <div [ngClass]="'pack_container1'">
-      <div [ngClass]="'to_put_pack_container_img_in_center'">
-        <img
-          [ngClass]="'pack_container_img'"
-          src="./../../../assets/pack1.png"
-        />
-
-        <h2>GROWTH PACK</h2>
-      </div>
-
-      <br />
-      <p [ngClass]="'paraghraph_black'">Feedback CV<br />et candidatures</p>
-      <br />
-      <h3>29 DT TTC</h3>
-      <br />
-      <div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>Avis<span> honnête</span> sur le CV</p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>
-            Feedback sur le <span> système de suivi</span> des candidatures.
-          </p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>
-            Feedback sur le <span> contenu</span> et la
-            <span> conception</span>.
-          </p>
-        </div>
-      </div>
-    </div>
+    <div [ngClass]="'pack_container1'"><app-pack-growth></app-pack-growth></div>
 
     <div [ngClass]="'container_paragraph1'">
       <p [ngClass]="'paragraph1'">
@@ -79,81 +45,13 @@
 
     <div [ngClass]="'style_pack2'">
       <div [ngClass]="'pack_container2'">
-        <div [ngClass]="'to_put_pack_container_img_in_center'">
-          <img
-            [ngClass]="'pack_container_img'"
-            src="./../../../assets/pack2.png"
-          />
-          <h2>EVOLUTION PACK</h2>
-        </div>
-
-        <br />
-        <p [ngClass]="'paraghraph_black'">CV professionnel <br />optimisé</p>
-        <br />
-        <h3>99 DT TTC</h3>
-        <br />
-        <div>
-          <div [ngClass]="'check'">
-            <img src="./../../../assets/check.png" />
-            <p>CV rédigé de manière <span> professionnelle</span>.</p>
-          </div>
-          <div [ngClass]="'check'">
-            <img src="./../../../assets/check.png" />
-            <p>Formaté pour le<span> succès</span> .</p>
-          </div>
-          <div [ngClass]="'check'">
-            <img src="./../../../assets/check.png" />
-            <p>Optimisé pour<span> les mots clés</span> .</p>
-          </div>
-          <div [ngClass]="'check'">
-            <img src="./../../../assets/check.png" />
-            <p>Conseils pour postuler à<span> des emplois</span> .</p>
-          </div>
-        </div>
+        <app-pack-evolution></app-pack-evolution>
       </div>
     </div>
   </div>
   <div [ngClass]="'container_EXECUTIVE_PACK'">
     <div [ngClass]="'pack_container3'">
-      <div [ngClass]="'to_put_pack_container_img_in_center'">
-        <img
-          [ngClass]="'pack_container_img'"
-          src="./../../../assets/pack3.png"
-        />
-        <h2>EXECUTIVE PACK</h2>
-      </div>
-
-      <br />
-      <p [ngClass]="'paraghraph_black'">CV pro, lettre, LinkedIn</p>
-      <br />
-      <h3>249 DT TTC</h3>
-      <br />
-      <div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>CV rédigé de manière professionnelle.</p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>Formaté pour le succès.</p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>Optimisé pour les mots clés.</p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p><span>Lettre </span>de motivation.</p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p><span> </span> dans les <span> 60 jours</span>.</p>
-        </div>
-        <div [ngClass]="'check'">
-          <img src="./../../../assets/check.png" />
-          <p>Remaniement de profil<span> LinkedIn</span> .</p>
-        </div>
-      </div>
+      <app-pack-executive></app-pack-executive>
     </div>
 
     <div [ngClass]="'container_paragraph3'">

@@ -1,0 +1,38 @@
+.style_pack {
+    display: grid;
+    place-items: center;
+  }
+  .to_put_pack_container_img_in_center {
+    display: grid;
+    text-align: center;
+    font-size: 14px;
+  }
+  .paraghraph_black {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+  }
+  .check {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    justify-items: start;
+    grid-gap: 1em;
+    margin-bottom: 20px;
+    text-align: start;
+    p {
+      margin: 0;
+    }
+    span{
+      font-weight: bolder;
+    }
+  }
+  .pack_container_img {
+    justify-self: center !important;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
