@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-pack-growth',
-  templateUrl: './pack-growth.component.html',
-  styleUrls: ['./pack-growth.component.css']
+  selector: "app-pack-growth",
+  templateUrl: "./pack-growth.component.html",
+  styleUrls: ["./pack-growth.component.scss"],
 })
-export class PackGrowthComponent {
-
-}
+export class PackGrowthComponent {}

@@ -8,11 +8,11 @@
     #cd1b3d,
     #e61a41
   );
-  height: auto;
+  min-height: auto;
   }
   .ilBig {
    
-    height: 100vh;
+    min-height: 100vh;
   }
   
   .pricing {
@@ -104,6 +104,23 @@
     
     }
   }
+  .check {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    justify-items: start;
+    grid-gap: 1em;
+    margin-bottom: 20px;
+    text-align: start;
+    p {
+      margin: 0;
+    }
+    span{
+      font-weight: bolder;
+    }
+  }
   /* CSS */
   .button-76 {
     background-color: #cf245f;
@@ -166,7 +183,7 @@
   
   @media screen and (max-width: 1300px) {
     .ilBig {
-      height: 170vh;
+      min-height: 170vh;
     }
     .head-pricing {
       width: 100%;
@@ -200,7 +217,7 @@
    }
   @media screen and (max-width: 870px) {
     .ilBig {
-      height: 230vh;
+      min-height: 230vh;
     }
     .head-pricing {
       width: 100%;
@@ -231,3 +248,7 @@
     }
    }
   
+   @media screen and (max-width: 435px) {
+   .button-76 {
+    
+  }}
