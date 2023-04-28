@@ -1,13 +1,21 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import { MatDialog } from "@angular/material/dialog";
+import { DialogComponent } from "src/app/templates/dialog/dialog.component";
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss'],
+  selector: "app-navbar",
+  templateUrl: "./navbar.component.html",
+  styleUrls: ["./navbar.component.scss"],
 })
 export class NavbarComponent implements OnInit {
-  constructor(private router: Router) {}
-
+  ////////////////////////////////////////////////////////////////////////////////////
+  constructor(private router: Router, public dialog: MatDialog) {}
+  login() {
+    const dialogRef = this.dialog.open(DialogComponent, {
+      data: { use: "login" },
+    });
+  }
+  ////////////////////////////////////////////////////////////////////////////////////
   i: number = 0;
   dispaly: boolean = true;
   ngOnInit(): void {}
@@ -15,13 +23,13 @@ export class NavbarComponent implements OnInit {
     this.router.navigateByUrl(to);
   }
   toggle() {
-    const nav = document.getElementsByClassName('divbar')[0] as
+    const nav = document.getElementsByClassName("divbar")[0] as
       | HTMLElement
-      | '';
+      | "";
     if (this.i % 2 === 0) {
-      document.getElementsByClassName('divbar')[0].classList.add('dropdown');
+      document.getElementsByClassName("divbar")[0].classList.add("dropdown");
     } else {
-      document.getElementsByClassName('divbar')[0].classList.remove('dropdown');
+      document.getElementsByClassName("divbar")[0].classList.remove("dropdown");
     }
     this.i++;
   }
@@ -31,38 +39,38 @@ export class NavbarComponent implements OnInit {
       document.documentElement.scrollTop > 80
     ) {
       document
-        .getElementsByClassName('navbar-container')[0]
-        .classList.add('scrolled');
+        .getElementsByClassName("navbar-container")[0]
+        .classList.add("scrolled");
     } else {
       document
-        .getElementsByClassName('navbar-container')[0]
-        .classList.remove('scrolled');
+        .getElementsByClassName("navbar-container")[0]
+        .classList.remove("scrolled");
     }
   }
-  @HostListener('window:scroll', ['$event']) // for window scroll events
+  @HostListener("window:scroll", ["$event"]) // for window scroll events
   onScroll(event: any) {
     this.scrollFunction();
   }
   toApropos() {
-   this.router.navigateByUrl("/")
+    this.router.navigateByUrl("/");
 
-    document.getElementById('about')!.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("about")!.scrollIntoView({ behavior: "smooth" });
   }
   toHeader() {
-    this.router.navigateByUrl("/")
- 
-     document.getElementById('header')!.scrollIntoView({ behavior: 'smooth' });
-   }
-  toPacks() {
-   this.router.navigateByUrl("/")
+    this.router.navigateByUrl("/");
 
-    document.getElementById('Packs')!.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("header")!.scrollIntoView({ behavior: "smooth" });
+  }
+  toPacks() {
+    this.router.navigateByUrl("/");
+
+    document.getElementById("Packs")!.scrollIntoView({ behavior: "smooth" });
   }
   toTemoignage() {
-   this.router.navigateByUrl("/readme")
+    this.router.navigateByUrl("/readme");
   }
   toContact() {
-   this.router.navigateByUrl("/")
-    document.getElementById('contact')!.scrollIntoView({ behavior: 'smooth' });
+    this.router.navigateByUrl("/");
+    document.getElementById("contact")!.scrollIntoView({ behavior: "smooth" });
   }
 }
