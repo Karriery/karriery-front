@@ -1,12 +1,12 @@
-<div *ngIf="entryData.use === 'login'" ngClass="login_container">
+<div *ngIf="entryData.use === 'login'" ngClass="container">
   <app-input></app-input>
   <app-input></app-input>
-  <button (click)="signup()">signup</button>
+  <button ngClass="button" (click)="signup()">signup</button>
 </div>
-<div *ngIf="entryData.use === 'signup'">
+<div *ngIf="entryData.use === 'signup'" ngClass="container">
   <app-input></app-input>
   <app-input></app-input>
   <app-input></app-input>
   <app-input></app-input>
-  <button (click)="close()">close</button>
+  <button ngClass="button" (click)="close()">close</button>
 </div>

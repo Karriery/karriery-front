@@ -1,23 +1,23 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Email</mat-label>
+<div class="example-form">
+  <mat-form-field style="width: 100%" class="example-full-width">
+    <mat-label>{{ text }}</mat-label>
     <input
-      type="email"
+      type="{{ type }}"
       matInput
       [formControl]="emailFormControl"
-      placeholder="Ex. pat@example.com"
+      placeholder="{{ placeholder }}"
+      value="{{ value }}"
     />
-    <mat-hint>Errors appear instantly!</mat-hint>
     <mat-error
       *ngIf="
         emailFormControl.hasError('email') &&
         !emailFormControl.hasError('required')
       "
     >
-      Please enter a valid email address
+      Please enter a valid {{ text }}
     </mat-error>
     <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
+      {{ text }} is <strong>required</strong>
     </mat-error>
   </mat-form-field>
-</form>
+</div>

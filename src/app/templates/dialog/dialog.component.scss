@@ -1,22 +1,33 @@
 ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  display: grid;
+  place-items: center;
+  min-height: 550px;
+  width: 450px;
+  border-radius: 20px;
+  .container {
+    width: 100%;
     display: grid;
+    grid-template-columns: 1fr;
     place-items: center;
-    min-height: 550px;
-    width: 450px;
-    border-radius: 20px;
-  .login_container{
+    .example-form {
+      min-width: 150px;
+      max-width: 500px;
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-      place-items: center;
-      .example-form {
-          min-width: 150px;
-          max-width: 500px;
-          width: 100%;
-        }
-        
-        .example-full-width {
-          width: 100%;
-        }
+    }
+
+    .example-full-width {
+      width: 100%;
+    }
+
   }
-  }
+}
+.button {
+  background: linear-gradient(90deg, #e81a41 20.6%, #b21b37 90.96%);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  border-color: none;
+}

@@ -35,7 +35,8 @@ import { environment } from "src/environments/environment";
 import { SpinnerComponent } from "./templates/spinner/spinner.component";
 import { PaymentComponent } from "./pages/payment/payment.component";
 import { DialogComponent } from "././templates/dialog/dialog.component";
-import { InputComponent } from './shared/input/input.component';
+import { InputComponent } from "./shared/input/input.component";
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { InputComponent } from './shared/input/input.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireStorageModule,
     MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
