@@ -1,9 +1,72 @@
-.not_found {
-  width: 70%;
-  height: 80vh;
-  background-image: url(./../../../assets/404.png);
-  background-size: cover;
-  display: grid;
-  place-self: center;
-  margin: 0 auto;
+.container {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #861b2e,
+    #9d1c33,
+    #b51c38,
+    #cd1b3d,
+    #e61a41
+  );
+  width: 100%;
+  min-height: 100%;
+  h1 {
+    padding-top: 150px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 400%;
+    color: white;
+  }
+
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    color: white;
+
+    font-style: normal;
+  }
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 850%;
+    color: white;
+    display: inline-block;
+    transform: rotate(330deg);
+  }
+
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 950%;
+    color: white;
+
+    display: inline-block;
+    transform: rotate(380deg);
+    padding: 15px;
+  }
+
+  h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-size: 275%;
+    color: white;
+  }
+
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-size: 850%;
+    color: white;
+    display: inline-block;
+    transform: rotate(375deg);
+    margin-bottom: 100px;
+  }
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    min-height: auto;
+  }
 }
