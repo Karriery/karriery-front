@@ -1,0 +1,12 @@
+.container_top{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.container_bottom{
+    width: 75%;
+    place-self: center;
+    display: grid;
+    z-index: 1000;
+    margin-top: -620px;
+    position: relative;
+}

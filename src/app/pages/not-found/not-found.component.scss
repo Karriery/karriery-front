@@ -10,8 +10,22 @@
   );
   width: 100%;
   min-height: 100%;
+  display: grid;
+  .container_img {
+    width: 100%;
+    margin-top: -100px;
+    display: grid;
+    place-items: center;
+ 
+  }
+  img{
+    width: 150%;
+    height: 60%;
+    place-self: center;
+  }
   h1 {
     padding-top: 150px;
+    padding-bottom: -150px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 400%;
@@ -20,7 +34,7 @@
 
   span {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 100%;
     color: white;
 
@@ -44,7 +58,6 @@
 
     display: inline-block;
     transform: rotate(380deg);
-    padding: 15px;
   }
 
   h5 {
@@ -61,7 +74,6 @@
     color: white;
     display: inline-block;
     transform: rotate(375deg);
-    margin-bottom: 100px;
   }
 
   img {
