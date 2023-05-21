@@ -1,1 +1,16 @@
-<p>payment-choice works!</p>
+<div ngClass="method-payment ">
+  <span ngClass="big-title">Méthode de payement</span>
+  <button ngClass="Versement-button" [routerLink]="'/createUser/payVer'">
+    Versement
+  </button>
+  <button ngClass="Carte-button" ngClass="Versement-button">
+    Carte Bancaire
+  </button>
+  <button
+    ngClass="Cash-button"
+    ngClass="Versement-button"
+    [routerLink]="'/createUser/payCash'"
+  >
+    Cash
+  </button>
+</div>
