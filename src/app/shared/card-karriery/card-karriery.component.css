@@ -1,10 +1,7 @@
-body {
+.body {
   background-color: white;
-  position: relative;
-  width: 25%;
+  width: 100%;
   height: 550px;
-  left: 66%;
-  top: 250px;
   border: 7px solid #ffffff;
   border-radius: 5%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -23,7 +20,7 @@ body {
   padding: 5%;
   border-radius: 5%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
+
   top: 150px;
   width: 85%;
 }
@@ -42,10 +39,8 @@ h1 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  left: 3%;
+
   color: #2b2828;
-  position: relative;
-  top: 50px;
 }
 
 h2 {
@@ -54,10 +49,7 @@ h2 {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
-  left: 75%;
   color: #726c6c;
-  position: relative;
-  top: 10px;
 }
 h3 {
   width: 3%;
@@ -65,10 +57,9 @@ h3 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  left: -19%;
+
   color: #2b2828;
-  position: relative;
-  top: 20px;
+
   display: inline;
 }
 
@@ -78,10 +69,8 @@ h4 {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
-  left: 83%;
+
   color: #6e6666;
-  position: relative;
-  top: -28px;
 }
 h5 {
   width: 3%;
@@ -89,11 +78,10 @@ h5 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  left: 1%;
+
   margin-top: 5%;
   color: #2b2828;
   position: absolute;
-  top: 42%;
 }
 h6 {
   width: 4%;
@@ -101,9 +89,9 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
-  left: 47%;
+
   color: #5c5757;
-  position: relative;
+
   top: -28px;
   display: inline;
 }
@@ -113,10 +101,10 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  right: 49%;
+
   margin-top: 5%;
   color: #2b2828;
-  position: relative;
+
   top: 25px;
   display: inline;
 }
@@ -125,9 +113,9 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
-  left: 0%;
+
   color: #5c5757;
-  position: relative;
+
   top: 25px;
 }
 
@@ -137,10 +125,10 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  right: 28%;
+
   margin-top: 5%;
   color: #2b2828;
-  position: relative;
+
   top: 55px;
   display: inline;
 }
@@ -152,7 +140,7 @@ h6 {
   font-weight: normal;
   left: 7%;
   color: #5c5757;
-  position: relative;
+
   top: 54px;
 }
 
@@ -162,10 +150,10 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  right: 28%;
+
   margin-top: 5%;
   color: #2b2828;
-  position: relative;
+
   top: 55px;
   display: inline;
 }
@@ -174,9 +162,9 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 17px;
   font-weight: normal;
-  left: 7%;
+
   color: #5c5757;
-  position: relative;
+
   top: 54px;
 }
 .h13 {
@@ -185,22 +173,30 @@ h6 {
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-  right: 35%;
+
   margin-top: 5%;
   color: #2b2828;
-  position: relative;
+
   top: 55px;
   display: inline;
   color: red;
 }
+.left {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #6e6666;
+  display: grid;
+  justify-items: end;
+}
+
 .h14 {
   padding: 0%;
   font-family: Arial, sans-serif;
   font-size: 25px;
   font-weight: normal;
-  left: 10%;
   color: #5c5757;
-  position: relative;
+
   top: 54px;
 }
 
@@ -208,7 +204,6 @@ h6 {
   border-top: 1px solid #ccc;
   margin: 10px 0;
   width: 70%;
-  position: relative;
+
   top: 50px;
-  left: 10%;
 }

@@ -14,6 +14,7 @@ import { CreateUserPaymentChoiceComponent } from "./templates/create-user-paymen
 import { PaiementParVersementComponent } from "./templates/paiement-par-versement/paiement-par-versement.component";
 import { PaiementParCashComponent } from "./templates/paiement-par-cash/paiement-par-cash.component";
 import { CreateUserPackageConfirmationComponent } from "./templates/create-user-package-confirmation/create-user-package-confirmation.component";
+import { VerificationPaiementComponent } from "./templates/verification-paiement/verification-paiement.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -30,12 +31,10 @@ const routes: Routes = [
         path: "packageConfirmation",
         component: CreateUserPackageConfirmationComponent,
       },
-      {
-        path: "pay",
-        component: CreateUserPaymentChoiceComponent,
-      },
+      { path: "pay", component: CreateUserPaymentChoiceComponent },
       { path: "payVer", component: PaiementParVersementComponent },
       { path: "payCash", component: PaiementParCashComponent },
+      { path: "verification", component: VerificationPaiementComponent },
       {
         path: "Personal",
         component: CreateUserPersonalInformationComponent,

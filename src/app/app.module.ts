@@ -53,6 +53,7 @@ import { CreateUserPackageConfirmationComponent } from "./templates/create-user-
 import { CardProfilRedComponent } from "./shared/card-profil-red/card-profil-red.component";
 import { PaiementParVersementComponent } from "./templates/paiement-par-versement/paiement-par-versement.component";
 import { PaiementParCashComponent } from './templates/paiement-par-cash/paiement-par-cash.component';
+import { VerificationPaiementComponent } from './templates/verification-paiement/verification-paiement.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +97,7 @@ import { PaiementParCashComponent } from './templates/paiement-par-cash/paiement
     CardProfilRedComponent,
     PaiementParVersementComponent,
     PaiementParCashComponent,
+    VerificationPaiementComponent,
   ],
   imports: [
     BrowserModule,

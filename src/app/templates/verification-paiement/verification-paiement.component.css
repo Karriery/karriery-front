@@ -1,0 +1,47 @@
+.container {
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+}
+span {
+  color: black;
+  font-size: 32px;
+  font-weight: normal;
+}
+h1 {
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+}
+p {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 24px;
+  text-align: center;
+}
+.p1 {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+.p2 {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.button3 {
+  margin-top: 20px;
+  padding: 1%;
+  background-color: #e81a41;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px; /* Updated font-size value */
+  position: relative;
+}
