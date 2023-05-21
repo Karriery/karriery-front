@@ -1,10 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from "@angular/core";
 
 @Component({
-  selector: 'app-create-user-payment-choice',
-  templateUrl: './create-user-payment-choice.component.html',
-  styleUrls: ['./create-user-payment-choice.component.css']
+  selector: "app-create-user-payment-choice",
+  templateUrl: "./create-user-payment-choice.component.html",
+  styleUrls: ["./create-user-payment-choice.component.css"],
 })
-export class CreateUserPaymentChoiceComponent {
-
-}
+export class CreateUserPaymentChoiceComponent {}

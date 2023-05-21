@@ -1,1 +1,26 @@
-<app-paiement-par-versement></app-paiement-par-versement>
+<div ngClass="body">
+  <div ngClass="container">
+    <div>
+      <app-create-user-card-user2></app-create-user-card-user2>
+    </div>
+    <div>
+      <span class="big-title">Méthode de payement</span>
+      <button class="Versement-button" [routerLink]="'/createUser/payVer'">
+        Versement
+      </button>
+      <button class="Carte-button" class="Versement-button">
+        Carte Bancaire
+      </button>
+      <button
+        class="Cash-button"
+        class="Versement-button"
+        [routerLink]="'/createUser/payCash'"
+      >
+        Cash
+      </button>
+    </div>
+    <div>
+      <app-card-karriery>></app-card-karriery>
+    </div>
+  </div>
+</div>

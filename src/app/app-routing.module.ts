@@ -11,6 +11,9 @@ import { FormPersonalInformationComponent } from "./shared/form-personal-informa
 import { CreateUserPersonalInformationComponent } from "./templates/create-user-personal-information/create-user-personal-information.component";
 import { CreateUserCareeInformationComponent } from "./templates/create-user-caree-information/create-user-caree-information.component";
 import { CreateUserPaymentChoiceComponent } from "./templates/create-user-payment-choice/create-user-payment-choice.component";
+import { PaiementParVersementComponent } from "./templates/paiement-par-versement/paiement-par-versement.component";
+import { PaiementParCashComponent } from "./templates/paiement-par-cash/paiement-par-cash.component";
+import { CreateUserPackageConfirmationComponent } from "./templates/create-user-package-confirmation/create-user-package-confirmation.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -23,7 +26,16 @@ const routes: Routes = [
     component: CreateUserComponent,
     children: [
       { path: "Caree", component: CreateUserCareeInformationComponent },
-      { path: "pay", component: CreateUserPaymentChoiceComponent },
+      {
+        path: "packageConfirmation",
+        component: CreateUserPackageConfirmationComponent,
+      },
+      {
+        path: "pay",
+        component: CreateUserPaymentChoiceComponent,
+      },
+      { path: "payVer", component: PaiementParVersementComponent },
+      { path: "payCash", component: PaiementParCashComponent },
       {
         path: "Personal",
         component: CreateUserPersonalInformationComponent,
