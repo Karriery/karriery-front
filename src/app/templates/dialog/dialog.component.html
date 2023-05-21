@@ -1,12 +1,20 @@
 <div *ngIf="entryData.use === 'login'" ngClass="container">
-  <app-input></app-input>
-  <app-input></app-input>
-  <button ngClass="button" (click)="signup()">signup</button>
+  <h1>Se connecter</h1>
+  <app-input text="Email" type="email" value=" email "></app-input>
+  <app-input text="Mot de passe" ype="password" value=" password "></app-input>
+  <button ngClass="button" (click)="signup()">Connexion</button>
+  <h4>Créer un compte</h4>
 </div>
 <div *ngIf="entryData.use === 'signup'" ngClass="container">
-  <app-input></app-input>
-  <app-input></app-input>
-  <app-input></app-input>
-  <app-input></app-input>
-  <button ngClass="button" (click)="close()">close</button>
+  <h1>Créer un compte</h1>
+  <app-input text="Nom complet" type="email" value=" email "></app-input>
+  <app-input text="Email" type="email" value=" email "></app-input>
+  <app-input text="Mot de passe" type="password" value=" password "></app-input>
+  <app-input
+    text="Confirmation Mot de passe"
+    type="password"
+    value=" password "
+  ></app-input>
+  <button ngClass="button" (click)="login()">Inscription</button>
+  <h4>vous étes déja inscrit?<span>login</span></h4>
 </div>

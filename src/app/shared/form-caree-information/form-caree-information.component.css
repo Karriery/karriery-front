@@ -1,35 +1,18 @@
-.body {
-  background-color: #ffffff;
-  position: relative;
-  width: 53%;
-  height: 30%;
-  left: 37.8%;
-  top: 200px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2.3%;
-  box-sizing: content-box;
-  margin-bottom: 80%;
-}
-.rectangle {
-  border-radius: 5px;
-  top: -1857px;
-  left: 30%;
-  position: relative;
-  width: 37%; /* Adjust the width as needed */
-  height: 3px; /* Adjust the height as needed */
-  background-color: rgb(0, 38, 255); /* Change the background color */
-  border: 1px solid rgb(0, 38, 255); /* Add a border */
+.containerr {
+  background-color: white;
+  min-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 h3 {
   color: #292d32;
-  font-size: 100%;
+  font-size: 16px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
   text-align: center;
   max-lines: 5px;
-  line-gap-override: initial;
   margin: 160px 0;
   cursor: auto;
   position: relative;
@@ -40,7 +23,7 @@ h3 {
 }
 h2 {
   color: #67707b;
-  font-size: 100%;
+  font-size: 16px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 510;
@@ -52,12 +35,10 @@ h2 {
   height: 50%;
   left: 0%;
   top: -100px;
-  width: 100%;
 }
 span {
   color: #3d4646;
   position: relative;
-  width: 3%;
   height: 5px;
   left: 7%;
   top: -820px;
@@ -65,14 +46,13 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 0;
-  font-size: 90%;
+  font-size: 16px;
   line-height: 10%;
   text-align: center;
 }
 .span7 {
   color: #3d4646;
   position: relative;
-  width: 3%;
   height: 5px;
   left: 7%;
   top: -860px;
@@ -80,14 +60,13 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 0;
-  font-size: 90%;
+  font-size: 16px;
   line-height: 10%;
   text-align: center;
 }
 .span4 {
   color: #3d4646;
   position: relative;
-  width: 3%;
   height: 5px;
   left: 7%;
   top: -905px;
@@ -95,14 +74,13 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 0;
-  font-size: 90%;
+  font-size: 16px;
   line-height: 10%;
   text-align: center;
 }
 .span5 {
   color: #3d4646;
   position: relative;
-  width: 3%;
   height: 5px;
   left: 7%;
   top: -955px;
@@ -110,14 +88,13 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 0;
-  font-size: 90%;
+  font-size: 16px;
   line-height: 10%;
   text-align: center;
 }
 .span6 {
   color: #3d4646;
   position: relative;
-  width: 3%;
   height: 5px;
   left: 7%;
   top: -1005px;
@@ -125,14 +102,13 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 0;
-  font-size: 90%;
+  font-size: 16px;
   line-height: 10%;
   text-align: center;
 }
 .span1 {
   color: #262e2e;
   position: relative;
-  width: 20%;
   height: 50px;
   left: 7%;
   top: -1450px;
@@ -140,14 +116,13 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 100%;
+  font-size: 16px;
   line-height: 30%;
   text-align: center;
 }
 .span2 {
   color: #262e2e;
   position: relative;
-  width: 20%;
   height: 50px;
   left: 7%;
   top: -1495px;
@@ -155,13 +130,12 @@ span {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 100%;
+  font-size: 16px;
   line-height: 30%;
   text-align: center;
 }
 /* Full-width inputs */
 input[id="niveau"] {
-  width: 80%;
   height: 5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -173,14 +147,13 @@ input[id="niveau"] {
   margin-bottom: 20%;
   margin-right: 9%;
   margin-left: 9%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   position: relative;
   top: -800px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 input[id="diplome"] {
-  width: 80%;
   height: 5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -192,13 +165,12 @@ input[id="diplome"] {
   margin-bottom: 20%;
   margin-right: 9%;
   margin-left: 9%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   position: relative;
   top: -842px;
 }
 input[id="competances"] {
-  width: 80%;
   height: 5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -210,13 +182,12 @@ input[id="competances"] {
   margin-bottom: 20%;
   margin-right: 9%;
   margin-left: 9%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   position: relative;
   top: -890px;
 }
 input[id="adresse"] {
-  width: 80%;
   height: 5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -228,13 +199,12 @@ input[id="adresse"] {
   margin-bottom: 20%;
   margin-right: 9%;
   margin-left: 9%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   position: relative;
   top: -940px;
 }
 input[id="experience"] {
-  width: 80%;
   height: 5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -246,13 +216,12 @@ input[id="experience"] {
   margin-bottom: 20%;
   margin-right: 9%;
   margin-left: 9%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   position: relative;
   top: -990px;
 }
 input[id="poste"] {
-  width: 80%;
   height: 5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -264,14 +233,12 @@ input[id="poste"] {
   margin-bottom: 20%;
   margin-right: 9%;
   margin-left: 9%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   position: relative;
   top: -1433px;
 }
 input[id="a propos"] {
-  width: 83%;
-  height: 5%;
   margin: 8px 0;
   display: grid;
   border: 1px solid rgb(173, 172, 172);
@@ -281,50 +248,51 @@ input[id="a propos"] {
   margin-bottom: 20%;
   margin-right: 8%;
   margin-left: 5%;
-  font-size: 50%;
+  font-size: 16px;
   color: #a9aeb5;
   bottom: 50%;
   position: relative;
   top: -1475px;
   stroke: #0d678a;
   left: 3%;
+
+  width: 50%;
 }
 .rectangle {
   border-radius: 5px;
   top: -1507px;
   left: 30%;
+  width: 50%;
   position: relative;
-  width: 37%; /* Adjust the width as needed */
+  /* Adjust the width as needed */
   height: 3px; /* Adjust the height as needed */
   background-color: rgb(0, 38, 255); /* Change the background color */
   border: 1px solid rgb(0, 38, 255); /* Add a border */
 }
 input[type="submit"] {
-  border-radius: 25px;
-  border: 1px solid #929292;
+  border-radius: 33px;
+  border: 1px solid #e81a41;
   background-color: white;
-  color: #929292;
-  font-size: 130%;
+  color: #e81a41;
+  font-size: 20px;
+  text-align: center;
   font-weight: normal;
   letter-spacing: 1px;
   transition: transform 80ms ease-in;
-  width: 43%;
-  margin-top: 20px;
-  text-align: center; /* Center the text horizontally */
-  line-height: normal; /* Reset the line-height */
-  padding: 5%;
+  width: 42%;
+  margin-top: 28px;
+  padding: 5px;
   margin: 15%;
+
   cursor: pointer;
   position: relative;
   bottom: 1600px;
-  height: 45px;
+  height: 40px;
   left: 12%;
-  top: -1580px;
 }
 label {
   color: #262e2e;
   position: relative;
-  width: 20%;
   height: 50px;
   left: 7%;
   top: -1722px;
@@ -332,7 +300,7 @@ label {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 100%;
+  font-size: 16px;
   line-height: 30%;
   text-align: center;
 }

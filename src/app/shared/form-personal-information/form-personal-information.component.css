@@ -1,17 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #ffffff;
-  position: relative;
-  width: 53%;
-  height: 30%;
-  left: 37.8%;
-  top: 200px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 2.3%;
-  box-sizing: content-box;
-  margin-bottom: 80%;
+.containerr {
+  background-color: white;
+  min-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 h2 {
   color: #292d32;

@@ -46,11 +46,13 @@ import { PaymentChoiceComponent } from "./shared/payment-choice/payment-choice.c
 import { CardKarrieryComponent } from "./shared/card-karriery/card-karriery.component";
 import { CreateUserCardUser1Component } from "./shared/create-user-card-user1/create-user-card-user1.component";
 import { CreateUserCardUser2Component } from "./shared/create-user-card-user2/create-user-card-user2.component";
-import { CreateUserPersonalInformationComponent } from './templates/create-user-personal-information/create-user-personal-information.component';
-import { CreateUserCareeInformationComponent } from './templates/create-user-caree-information/create-user-caree-information.component';
-import { CreateUserPaymentChoiceComponent } from './templates/create-user-payment-choice/create-user-payment-choice.component';
-import { CreateUserPackageConfirmationComponent } from './templates/create-user-package-confirmation/create-user-package-confirmation.component';
-import { CardProfilRedComponent } from './shared/card-profil-red/card-profil-red.component';
+import { CreateUserPersonalInformationComponent } from "./templates/create-user-personal-information/create-user-personal-information.component";
+import { CreateUserCareeInformationComponent } from "./templates/create-user-caree-information/create-user-caree-information.component";
+import { CreateUserPaymentChoiceComponent } from "./templates/create-user-payment-choice/create-user-payment-choice.component";
+import { CreateUserPackageConfirmationComponent } from "./templates/create-user-package-confirmation/create-user-package-confirmation.component";
+import { CardProfilRedComponent } from "./shared/card-profil-red/card-profil-red.component";
+import { PaiementParVersementComponent } from "./templates/paiement-par-versement/paiement-par-versement.component";
+import { PaiementParCashComponent } from './templates/paiement-par-cash/paiement-par-cash.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +94,8 @@ import { CardProfilRedComponent } from './shared/card-profil-red/card-profil-red
     CreateUserPaymentChoiceComponent,
     CreateUserPackageConfirmationComponent,
     CardProfilRedComponent,
+    PaiementParVersementComponent,
+    PaiementParCashComponent,
   ],
   imports: [
     BrowserModule,

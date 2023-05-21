@@ -1,4 +1,4 @@
-<div style="display: flex">
+<div style="display: flex" ngClass="containerr">
   <div style="flex: 1">
     <h2>Information Personnel</h2>
     <div ngClass="rectangle"></div>
@@ -43,7 +43,12 @@
         placeholder="http://ca.linkedin.com/in/nomlinkedin"
       />
       <br />
-      <input type="submit" value="Suivant" />
+      <input
+        type="submit"
+        value="Suivant"
+        (click)="suivant()"
+        [routerLink]="'/createUser/Caree'"
+      />
     </form>
   </div>
 </div>

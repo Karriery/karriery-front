@@ -1,8 +1,9 @@
-<div style="display: flex">
+<div style="display: flex" ngClass="containerr">
   <div style="flex: 1">
     <h2>Information Personnel</h2>
     <span>votre niveau d'études:</span>
     <input type="text" id="niveau" placeholder="" />
+    <br />
     <br />
     <div ngClass="span7">veuillez entrer votre diplome :</div>
     <input type="text" id="diplome" placeholder="" />
@@ -13,7 +14,18 @@
     <div ngClass="span5">veuillez entrer votre adresse:</div>
     <input type="text" id="adresse" placeholder="" />
     <br />
-    <div ngClass="span6">veuillez entrer votre expérience profesionnelle :</div>
+    <div ngClass="span6">
+      veuillez entrer votre expérience<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      profesionnelle :
+    </div>
     <input type="text" id="experience" placeholder="" />
   </div>
   <div style="flex: 1"></div>
@@ -32,7 +44,12 @@
       <div ngClass="span2">Entrez votre à propos ici</div>
       <input type="text" id="a propos" placeholder="" />
       <br />
-      <input type="submit" value="Suivant" />
+      <input
+        type="submit"
+        value="Suivant"
+        (click)="suivant()"
+        [routerLink]="'/createUser/pay'"
+      />
     </form>
   </div>
 </div>

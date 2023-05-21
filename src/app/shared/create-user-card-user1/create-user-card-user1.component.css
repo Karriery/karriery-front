@@ -1,18 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #fff;
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  left: 15%;
-  top: 45%;
-  border: 7px solid #ffffff;
-  border-radius: 8%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  scroll-behavior: auto;
-  overflow: auto;
+.containerr {
+  background-color: white;
+  min-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .logo-left img {
   display: flex;
@@ -111,7 +103,7 @@ input[id="2"] {
   scroll-behavior: auto;
   overflow: auto;
 }
-span {
+.span {
   color: #262e2e;
   position: relative;
   width: 75%;
@@ -127,7 +119,7 @@ span {
   scroll-behavior: auto;
   overflow: auto;
 }
-span3 {
+.span3 {
   color: #3c3f3f;
   position: relative;
   width: 75%;
@@ -143,7 +135,7 @@ span3 {
   scroll-behavior: auto;
   overflow: auto;
 }
-span4 {
+.span4 {
   color: #3c3f3f;
   position: relative;
   width: 75%;
@@ -160,7 +152,7 @@ span4 {
   overflow: auto;
 }
 
-span5 {
+.span5 {
   color: #3c3f3f;
   position: relative;
   width: 75%;
@@ -176,7 +168,7 @@ span5 {
   scroll-behavior: auto;
   overflow: auto;
 }
-span2 {
+.span2 {
   color: #262e2e;
   position: relative;
   width: 85%;
@@ -193,7 +185,7 @@ span2 {
   scroll-behavior: auto;
   overflow: auto;
 }
-span1 {
+.span1 {
   color: #262e2e;
   position: relative;
   width: 75%;
@@ -283,14 +275,14 @@ span1 {
   background-color: gray;
 }
 
-/* Change styles for span and cancel button on extra small screens */
+/* Change styles for .span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   .a {
     flex: auto;
   }
   /* Media query for screens smaller than 600px */
   @media only screen and (max-width: 600px) {
-    span {
+    .span {
       font-size: 16px;
       flex: 15%;
     }

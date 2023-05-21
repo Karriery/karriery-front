@@ -4,30 +4,39 @@
   min-height: 550px;
   width: 450px;
   border-radius: 20px;
+
   .container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
     place-items: center;
-    .example-form {
-      min-width: 150px;
-      max-width: 500px;
-      width: 100%;
-    }
 
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      padding-bottom: 40px;
+      padding-top: 50px;
+    }
     .example-full-width {
       width: 100%;
     }
-
   }
 }
 .button {
-  background: linear-gradient(90deg, #e81a41 20.6%, #b21b37 90.96%);
-  border-radius: 20px;
-  color: rgba(255, 255, 255, 1);
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  background: rgba(219, 26, 63, 1);
+  border-radius: 10px;
+  border-color: transparent;
+  color: white;
+  justify-content: center;
   text-align: center;
-  border-color: none;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0em;
+  padding: 3%;
+  padding-left: 25%;
+  padding-right: 25%;
+  place-self: center;
 }
