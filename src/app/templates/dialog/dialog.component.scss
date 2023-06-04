@@ -23,7 +23,7 @@
   }
 }
 .button {
-  background: rgba(219, 26, 63, 1);
+  background: linear-gradient(90deg, #e81a41 20.6%, #b21b37 90.96%);
   border-radius: 10px;
   border-color: transparent;
   color: white;
@@ -39,4 +39,8 @@
   padding-left: 25%;
   padding-right: 25%;
   place-self: center;
+}
+.input_icon {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
 }

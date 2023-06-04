@@ -1,0 +1,65 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: grid;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  padding: 20px;
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(
+    to right,
+    #861b2e,
+    #9d1c33,
+    #b51c38,
+    #cd1b3d,
+    #e61a41
+  );
+  p {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+.steps {
+  background-color: white;
+  height: 5px;
+  width: 70%;
+  align-self: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a  . b    . c ";
+
+  .cercle1 {
+    grid-area: a;
+    background-color: #861b2e;
+    border-radius: 200px;
+    margin-top: -15px;
+    height: 30px;
+    width: 30px;
+    border: solid white 1px;
+  }
+  .cercle2 {
+    grid-area: b;
+    background-color: #861b2e;
+    border-radius: 200px;
+    margin-top: -15px;
+    height: 30px;
+    width: 30px;
+    border: solid white 1px;
+    place-self: start;
+  }
+  .cercle3 {
+    grid-area: c;
+    background-color: #861b2e;
+    border-radius: 200px;
+    margin-top: -15px;
+    height: 30px;
+    width: 30px;
+    border: solid white 1px;
+    place-self: end;
+  }
+}

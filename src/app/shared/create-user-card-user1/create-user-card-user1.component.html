@@ -1,25 +1,23 @@
-<div ngClass=".containerr">
-  <div ngClass="logo logo-left">
-    <img src="./../../../assets/Mask.png" alt="logo5" />
-    <div ngClass="containerr" id="container">
-      <div ngClass="form-container log-in-container">
-        <span ngClass="span2">Abid Saif</span>
-        <div ngClass="line"></div>
-        <form action="#">
-          <span ngClass="span1">Nom:</span>
-          <input type="text" id="1" placeholder="Abid" />
-          <button ngClass="modifier-button1">Modifier</button>
-        </form>
-        <span ngClass="span3">Prénom: </span>
-        <input type="text" id="2" placeholder="Saif" />
-        <button ngClass="modifier-button2">Modifier</button>
-      </div>
-      <span ngClass="span4">Email: </span>
-      <input type="email" placeholder="abid.Saif2009@gmail.com" />
-      <button ngClass="modifier-button3">Modifier</button>
-      <span ngClass="span5">Mot de passe:</span>
-      <input type="password" placeholder="*********" />
-      <button ngClass="modifier-button4">Modifier</button>
+<div class="container" *ngFor="let e of list">
+  <img ngClass="img" src="{{ e.img }}" />
+  <h1 ngClass="title">{{ e.prenom }} {{ e.nom }}</h1>
+  <hr ngClass="ligne" />
+  <div class="info">
+    <div ngClass="div">
+      <div>Nom:</div>
+      <div>{{ e.nom }}</div>
+      <div ngClass="Modifier">Modifier</div>
+    </div>
+    <div ngClass="div">
+      <div>Prénom:</div>
+      <div>{{ e.prenom }}</div>
+      <div ngClass="Modifier">Modifier</div>
+    </div>
+    <div ngClass="div">
+      <div>Email:</div>
+      <div>{{ e.email }}</div>
+
+      <div ngClass="Modifier">Modifier</div>
     </div>
   </div>
 </div>

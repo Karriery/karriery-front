@@ -1,31 +1,41 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+} from "@angular/animations";
 
 @Component({
-  selector: 'app-card-services',
-  templateUrl: './card-services.component.html',
-  styleUrls: ['./card-services.component.scss'],
+  selector: "app-card-services",
+  templateUrl: "./card-services.component.html",
+  styleUrls: ["./card-services.component.scss"],
+  animations: [
+    trigger("cardAnimation1", [
+      transition(":enter", [
+        style({ transform: "translateX(-40%)" }),
+        animate("500ms", style({ transform: "translateX(0)" })),
+      ]),
+    ]),
+    trigger("cardAnimation2", [
+      transition(":enter", [
+        style({ transform: "translateX(40%)" }),
+        animate("500ms", style({ transform: "translateX(0)" })),
+      ]),
+    ]),
+    trigger("cardAnimation3", [
+      transition(":enter", [
+        style({ transform: "translateX(-40%)" }),
+        animate("500ms", style({ transform: "translateX(0)" })),
+      ]),
+    ]),
+    trigger("cardAnimation4", [
+      transition(":enter", [
+        style({ transform: "translateX(40%)" }),
+        animate("500ms", style({ transform: "translateX(0)" })),
+      ]),
+    ]),
+  ],
 })
-export class CardServicesComponent {
-  list: any = [
-    {
-      title: 'Feedback sur le système de suivi des candidatures',
-      paragraph:
-        'Obtener un feedback sur votre manière de suivi des candidatures et bénéficier d’une optimisation de votre candidature.',
-    },
-    {
-      title: 'CV rédigé de manière professionnelle',
-      paragraph:
-        'CV rédigé selon les normes et les attentes des recruteurs professionnels.',
-    },
-    {
-      title: 'Remaniement de profil LinkedIn',
-      paragraph:
-        "Bénéficier d'un remaniement de votre profil LinkedIn, améliorer votre visibilité et votre attractivité aux yeux des employeurs potentiels.",
-    },
-    {
-      title: 'Conseils pour postuler à des emplois',
-      paragraph:
-        "Reçevez des conseils pour postuler à des emplois, la manière de personnaliser votre CV et vos lettres de motivation en fonction de chaque offre d'emploi.",
-    },
-  ];
-}
+export class CardServicesComponent {}

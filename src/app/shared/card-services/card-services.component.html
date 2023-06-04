@@ -1,8 +1,30 @@
 <div class="card">
-  <div class="item" *ngFor="let e of list">
-    <h2>{{ e.title }}</h2>
+  <div class="item" [@cardAnimation1]>
+    <h2>Feedback sur le système de suivi des candidatures</h2>
     <p>
-      {{ e.paragraph }}
+      Obtener un feedback sur votre manière de suivi des candidatures et
+      bénéficier d’une optimisation de votre candidature.
+    </p>
+  </div>
+  <div class="item" [@cardAnimation2]>
+    <h2>CV rédigé de manière professionnelle</h2>
+    <p>
+      CV rédigé selon les normes et les attentes des recruteurs professionnels.
+    </p>
+  </div>
+  <div class="item" [@cardAnimation3]>
+    <h2>Remaniement LinkedIn</h2>
+    <p>
+      Bénéficier d'un remaniement de votre profil LinkedIn, améliorer votre
+      visibilité et votre attractivité aux yeux des employeurs potentiels.
+    </p>
+  </div>
+  <div class="item" [@cardAnimation4]>
+    <h2>Conseils</h2>
+    <p>
+      Reçevez des conseils pour postuler à des emplois, la manière de
+      personnaliser votre CV et vos lettres de motivation en fonction de chaque
+      offre d'emploi.
     </p>
   </div>
 </div>

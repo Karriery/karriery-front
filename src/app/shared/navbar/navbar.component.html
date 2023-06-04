@@ -1,21 +1,23 @@
-<div class="navbar-container" (scroll)="onScroll($event)">
+<div class="navbar-container" (scroll)="onScroll($event)" [@cardAnimation]>
   <div class="divbar">
-    <div class="logo">
+    <div class="logo" ngTilt>
       <img src="./../../../assets/logo_red.png" alt="logo" />
     </div>
 
     <div class="divbar-items-container">
-      <div class="list-unstyled divItem" (click)="toApropos()">
+      <div class="list-unstyled divItem" (click)="toApropos()" ngClass="hover">
         à propos de nous
       </div>
 
-      <div (click)="toPacks()">Nos Packs</div>
+      <div (click)="toPacks()" ngClass="hover">Nos Packs</div>
 
-      <div (click)="toTemoignage()">En savoir plus</div>
+      <div (click)="toTemoignage()" ngClass="hover">En savoir plus</div>
 
-      <div (click)="toContact()">Contact</div>
+      <div (click)="toContact()" ngClass="hover">Contact</div>
 
-      <div class="contPhone" (click)="login()">Se connecter</div>
+      <div class="contPhone" (click)="login()">
+        <img src="./../../../assets/enter.gif" />Connexion
+      </div>
     </div>
 
     <div class="drop-down-toggle">

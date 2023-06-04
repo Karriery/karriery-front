@@ -62,26 +62,27 @@
     }
   }
   .call-to-action {
+    margin-top: 30px;
     cursor: pointer;
     height: 80px;
-    background: #e81a41;
+    background: rgba(206, 27, 60, 1);
     border: none;
     font-family: "Montserrat", sans-serif;
     color: #262e2e;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all 0.2s;
     a {
+      display: grid;
+      place-items: center;
       width: 500.79px;
       height: 80px;
       font-style: normal;
-      color: #262e2e;
       font-family: "Montserrat", sans-serif;
-      font-weight: 400;
+      font-weight: 500;
       font-size: 20px;
       line-height: 24px;
-      display: flex;
-      align-items: center;
       text-align: center;
+      margin: 0 auto;
       color: #ffffff;
     }
   }
@@ -89,8 +90,10 @@
     background: white;
     border: 2px solid #e81a41;
     a {
-      color: #e81a41;
+      color: #c61b3b;
+      font-weight: 1000;
     }
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
 
@@ -175,4 +178,3 @@
     }
   }
 }
-

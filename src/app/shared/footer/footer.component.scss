@@ -75,10 +75,11 @@
     justify-items: start;
     font-family: "Montserrat", sans-serif;
   }
- 
 }
 .container_meduim_right {
-  input{width: 80%;}
+  input {
+    width: 80%;
+  }
   display: grid;
   color: white;
 }
@@ -120,5 +121,3 @@
 .container_services {
   color: white;
 }
-
-

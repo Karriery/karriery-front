@@ -2,10 +2,25 @@ import { Component, HostListener, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { MatDialog } from "@angular/material/dialog";
 import { DialogComponent } from "src/app/templates/dialog/dialog.component";
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+} from "@angular/animations";
 @Component({
   selector: "app-navbar",
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.scss"],
+  animations: [
+    trigger("cardAnimation", [
+      transition(":enter", [
+        style({ transform: "translateY(-100%)" }),
+        animate("600ms", style({ transform: "translateY(0)" })),
+      ]),
+    ]),
+  ],
 })
 export class NavbarComponent implements OnInit {
   ////////////////////////////////////////////////////////////////////////////////////

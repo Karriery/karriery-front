@@ -6,6 +6,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { MatIconModule } from "@angular/material/icon";
 import { MatDialogModule } from "@angular/material/dialog";
+import { NgTiltModule } from "@geometricpanda/angular-tilt";
 import { RouterModule } from "@angular/router";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -38,22 +39,15 @@ import { DialogComponent } from "././templates/dialog/dialog.component";
 import { InputComponent } from "./shared/input/input.component";
 import { MatInputModule } from "@angular/material/input";
 import { CreateUserComponent } from "./pages/create-user/create-user.component";
-import { NavbarCreateUserComponent } from "./shared/navbar-create-user/navbar-create-user.component";
-import { FormPersonalInformationComponent } from "./shared/form-personal-information/form-personal-information.component";
 import { FormCareeInformationComponent } from "./shared/form-caree-information/form-caree-information.component";
 import { FormPackageConfirmationComponent } from "./shared/form-package-confirmation/form-package-confirmation.component";
-import { PaymentChoiceComponent } from "./shared/payment-choice/payment-choice.component";
 import { CardKarrieryComponent } from "./shared/card-karriery/card-karriery.component";
 import { CreateUserCardUser1Component } from "./shared/create-user-card-user1/create-user-card-user1.component";
 import { CreateUserCardUser2Component } from "./shared/create-user-card-user2/create-user-card-user2.component";
 import { CreateUserPersonalInformationComponent } from "./templates/create-user-personal-information/create-user-personal-information.component";
 import { CreateUserCareeInformationComponent } from "./templates/create-user-caree-information/create-user-caree-information.component";
-import { CreateUserPaymentChoiceComponent } from "./templates/create-user-payment-choice/create-user-payment-choice.component";
-import { CreateUserPackageConfirmationComponent } from "./templates/create-user-package-confirmation/create-user-package-confirmation.component";
 import { CardProfilRedComponent } from "./shared/card-profil-red/card-profil-red.component";
-import { PaiementParVersementComponent } from "./templates/paiement-par-versement/paiement-par-versement.component";
-import { PaiementParCashComponent } from './templates/paiement-par-cash/paiement-par-cash.component';
-import { VerificationPaiementComponent } from './templates/verification-paiement/verification-paiement.component';
+import { CreateUserSuccessComponent } from './templates/create-user-success/create-user-success.component';
 
 @NgModule({
   declarations: [
@@ -82,25 +76,19 @@ import { VerificationPaiementComponent } from './templates/verification-paiement
     DialogComponent,
     InputComponent,
     CreateUserComponent,
-    NavbarCreateUserComponent,
-    FormPersonalInformationComponent,
     FormCareeInformationComponent,
     FormPackageConfirmationComponent,
-    PaymentChoiceComponent,
     CardKarrieryComponent,
     CreateUserCardUser1Component,
     CreateUserCardUser2Component,
     CreateUserPersonalInformationComponent,
     CreateUserCareeInformationComponent,
-    CreateUserPaymentChoiceComponent,
-    CreateUserPackageConfirmationComponent,
     CardProfilRedComponent,
-    PaiementParVersementComponent,
-    PaiementParCashComponent,
-    VerificationPaiementComponent,
+    CreateUserSuccessComponent,
   ],
   imports: [
     BrowserModule,
+    NgTiltModule,
     AppRoutingModule,
     MatDialogModule,
     MatIconModule,

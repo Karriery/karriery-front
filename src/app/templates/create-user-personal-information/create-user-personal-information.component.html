@@ -1,10 +1,37 @@
-<div ngClass="body">
-  <div ngClass="container">
-    <div>
-      <app-create-user-card-user1></app-create-user-card-user1>
-    </div>
-    <div>
-      <app-form-personal-information></app-form-personal-information>
+<div ngClass="container">
+  <div ngClass="container_Top">
+    <app-card-profil-red></app-card-profil-red>
+  </div>
+  <div ngClass="container_Bottom">
+    <app-create-user-card-user1></app-create-user-card-user1>
+    <div ngClass="container_form">
+      <div ngClass="container_left">
+        <div>
+          <h1 ngClass="title1">Information personnel</h1>
+          <hr ngClass="lign" />
+        </div>
+        <div>Veuillez enter votre numéro de téléphone :</div>
+        <input ngClass="input" placeholder="(+216)" />
+        <div ngClass="padding_top">Veuillez enter votre pays :</div>
+        <input ngClass="input" placeholder="Tunisie" />
+        <div ngClass="padding_top">Veuillez enter votre ville :</div>
+        <input ngClass="input" placeholder="Entrer votre ville" />
+        <div ngClass="padding_top">Veuillez enter votre adresse :</div>
+        <input ngClass="input" placeholder="Entrer votre adresse " />
+        <div ngClass="padding_top">Veuillez enter votre code postal :</div>
+        <input ngClass="input" placeholder="Entrer votre code postal " />
+      </div>
+
+      <div ngClass="container_right">
+        <h1 ngClass="title2">Information carrière</h1>
+        <div>Veuillez télécharger votre CV ci-dessous :</div>
+        <input ngClass="input" id="input" />
+        <div>Veuillez entrer votre lien du profil LinkedIn ci-dessous :</div>
+        <input ngClass="input" id="input2" />
+        <button ngClass="button" [routerLink]="'/createUser/Caree'">
+          Suivant
+        </button>
+      </div>
     </div>
   </div>
 </div>
