@@ -14,13 +14,23 @@ import { CreateUserChoicePaymentComponent } from "./templates/create-user-choice
 import { CreateUserPaymentVersementComponent } from "./templates/create-user-payment-versement/create-user-payment-versement.component";
 import { CreateUserPaymentCashComponent } from "./templates/create-user-payment-cash/create-user-payment-cash.component";
 import { VerificationPaymentComponent } from "./templates/verification-payment/verification-payment.component";
+import { UserProfilComponent } from "./pages/user-profil/user-profil.component";
+import { UserDashboardComponent } from "./templates/user-dashboard/user-dashboard.component";
+import { UserProfilInfoPerComponent } from "./templates/user-profil-info-per/user-profil-info-per.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "readme", component: ReadMeComponent },
   { path: "form", component: FormComponent },
   { path: "payment", component: PaymentComponent },
-
+  {
+    path: "userProfil",
+    component: UserProfilComponent,
+    children: [
+      { path: "userDashbord", component: UserDashboardComponent },
+      { path: "infoPerso", component: UserProfilInfoPerComponent },
+    ],
+  },
   {
     path: "createUser",
     component: CreateUserComponent,
