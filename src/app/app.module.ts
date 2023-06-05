@@ -53,6 +53,9 @@ import { CreateUserChoicePaymentComponent } from './templates/create-user-choice
 import { CreateUserPaymentCashComponent } from './templates/create-user-payment-cash/create-user-payment-cash.component';
 import { CreateUserPaymentVersementComponent } from './templates/create-user-payment-versement/create-user-payment-versement.component';
 import { VerificationPaymentComponent } from './templates/verification-payment/verification-payment.component';
+import { UserProfilComponent } from './pages/user-profil/user-profil.component';
+import { UserDashboardComponent } from './templates/user-dashboard/user-dashboard.component';
+import { UserProfilInfoPerComponent } from './templates/user-profil-info-per/user-profil-info-per.component';
 
 @NgModule({
   declarations: [
@@ -95,6 +98,9 @@ import { VerificationPaymentComponent } from './templates/verification-payment/v
     CreateUserPaymentCashComponent,
     CreateUserPaymentVersementComponent,
     VerificationPaymentComponent,
+    UserProfilComponent,
+    UserDashboardComponent,
+    UserProfilInfoPerComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,73 @@
+<div class="main-container">
+  <div class="container-left">
+    <div class="current-pack">
+      <div class="box_one">
+        <h2>Pack:</h2>
+        <h1 class="pack">Growth Pack</h1>
+        <h4>Valable jusqu’au 20/06/2023</h4>
+      </div>
+
+      <div class="meetings">
+        <div class="left">
+          <div class="box_two">
+            <h4><img src="./assets/calendar-menu.png" />Prochaine Réunion</h4>
+            <div class="box_22">
+              <div class="box222">
+                <p class="p1">Lundi</p>
+                <p class="p2">30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="main-progress2-cbar">
+            <h4><img src="./assets/user_icon_progress.png" />Profil complet</h4>
+            <div class="progress2-circle p37">
+              <span>37%</span>
+              <span class="text">37</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="steps">
+        <ul class="progressbar">
+          <li class="active">Step 1</li>
+          <li>Step 2</li>
+          <li>Step 3</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>ggggggg</div>
+  </div>
+  <div class="container-right">
+    <div class="container" *ngFor="let e of list">
+      <img ngClass="img" src="{{ e.img }}" />
+      <h1 ngClass="title">{{ e.prenom }} {{ e.nom }}</h1>
+      <hr ngClass="ligne" />
+      <div class="info">
+        <div ngClass="div">
+          <div>Nom:</div>
+          <div>{{ e.nom }}</div>
+          <div ngClass="Modifier">Modifier</div>
+        </div>
+        <div ngClass="div">
+          <div>Prénom:</div>
+          <div>{{ e.prenom }}</div>
+          <div ngClass="Modifier">Modifier</div>
+        </div>
+        <div ngClass="div">
+          <div>Email:</div>
+          <div>{{ e.email }}</div>
+
+          <div ngClass="Modifier">Modifier</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

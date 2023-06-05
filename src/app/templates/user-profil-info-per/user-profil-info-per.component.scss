@@ -1,0 +1,32 @@
+.top {
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: grid;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  padding: 20px;
+  padding-left: 30px;
+  background: linear-gradient(
+    to right,
+    #861b2e,
+    #9d1c33,
+    #b51c38,
+    #cd1b3d,
+    #e61a41
+  );
+}
+
+.divv div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sous-div {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+}
