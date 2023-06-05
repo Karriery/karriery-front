@@ -50,6 +50,8 @@ import { CardProfilRedComponent } from "./shared/card-profil-red/card-profil-red
 import { CreateUserSuccessComponent } from './templates/create-user-success/create-user-success.component';
 import { CreateUserConfirmationPackComponent } from './templates/create-user-confirmation-pack/create-user-confirmation-pack.component';
 import { CreateUserChoicePaymentComponent } from './templates/create-user-choice-payment/create-user-choice-payment.component';
+import { CreateUserPaymentCashComponent } from './templates/create-user-payment-cash/create-user-payment-cash.component';
+import { CreateUserPaymentVersementComponent } from './templates/create-user-payment-versement/create-user-payment-versement.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +91,8 @@ import { CreateUserChoicePaymentComponent } from './templates/create-user-choice
     CreateUserSuccessComponent,
     CreateUserConfirmationPackComponent,
     CreateUserChoicePaymentComponent,
+    CreateUserPaymentCashComponent,
+    CreateUserPaymentVersementComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,8 @@ import { CreateUserCareeInformationComponent } from "./templates/create-user-car
 import { CreateUserSuccessComponent } from "./templates/create-user-success/create-user-success.component";
 import { CreateUserConfirmationPackComponent } from "./templates/create-user-confirmation-pack/create-user-confirmation-pack.component";
 import { CreateUserChoicePaymentComponent } from "./templates/create-user-choice-payment/create-user-choice-payment.component";
+import { CreateUserPaymentVersementComponent } from "./templates/create-user-payment-versement/create-user-payment-versement.component";
+import { CreateUserPaymentCashComponent } from "./templates/create-user-payment-cash/create-user-payment-cash.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -34,6 +36,11 @@ const routes: Routes = [
       {
         path: "ChoicePayment",
         component: CreateUserChoicePaymentComponent,
+      },
+      { path: "PaymentCash", component: CreateUserPaymentCashComponent },
+      {
+        path: "PaymentVersement",
+        component: CreateUserPaymentVersementComponent,
       },
       {
         path: "Success",

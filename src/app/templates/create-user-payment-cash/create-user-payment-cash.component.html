@@ -1,0 +1,31 @@
+<app-card-profil-red></app-card-profil-red>
+
+<div ngClass="container_success">
+  <h1 ngClass="title"><span>Paiement</span> cash</h1>
+  <p>
+    Nous proposons également la possibilité de payer en espèces en personne. Si
+    vous êtes à Tunis, vous pouvez rencontrer notre représentant<span
+      >M.Halim Boussada (+216 58 065 605)</span
+    >
+    ou <span>M.Sami Ben Chaalia (+216 95 759 234)</span> pour procéder au
+    paiement en personne. Ils pourront vous donner de plus amples informations
+    sur la procédure de paiement et sur les horaires et lieux de rendez-vous."
+  </p>
+
+  <p>Veuillez télécharger votre reçu de paiement ici.</p>
+  <form
+    ngClass="form"
+    action="/upload"
+    method="POST"
+    enctype="multipart/form-data"
+  >
+    <input
+      ngClass="input_form"
+      type="file"
+      id="file"
+      name="file"
+      accept=".pdf, .doc, .docx"
+    />
+    <input ngClass="button" type="submit" value="Envoyer" />
+  </form>
+</div>
