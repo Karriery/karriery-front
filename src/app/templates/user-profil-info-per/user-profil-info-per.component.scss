@@ -18,15 +18,23 @@
     #e61a41
   );
 }
-
-.divv div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.container {
+  background-color: aqua;
 }
+.container_text {
+  background-color: rgb(174, 0, 255);
+  display: grid;
+  grid-gap:1em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.text-right {
+  background-color: rgb(255, 0, 119);
+}
+.Modifier {
+  margin: 0 auto;
+  display: grid;
 
-.sous-div {
-  font-size: 20px;
-  font-weight: 100;
-  padding: 10px;
+  padding-left: 50%;
+  text-decoration: underline;
+  color: rgba(23, 21, 98, 1);
 }
