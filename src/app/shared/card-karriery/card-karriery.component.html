@@ -1,29 +1,37 @@
-<div ngClass="body">
-  <div ngClass="logo logo-left">
-    <img src="./../../../assets/KARRIERYSECOND.png" alt="logo5" />
-    <div ngClass="container" id="container">
-      <div ngClass="form-container log-in-container">
-        <h3>L'entreprise <span ngClass="left">Karriery</span></h3>
-        <h3>Numéro de commande <span ngClass="left">517</span></h3>
-        <h3>Pack <span ngClass="left">Evolution pack</span></h3>
-        <div ngClass="h7">Prix TTC</div>
-        <div ngClass="h8 left">99 DT</div>
-        <div ngClass="line"></div>
-        <form action="#">
-          <div ngClass="h9">Sous-total</div>
-          <div ngClass="h10 left">99 DT</div>
-          <div ngClass="line"></div>
-          <form action="#">
-            <div ngClass="h11">Réduction</div>
-            <div ngClass="h12 left">-10 DT</div>
-            <div ngClass="line"></div>
-            <form action="#">
-              <div ngClass="h13">Total</div>
-              <div ngClass="h14 left">89 DT</div>
-            </form>
-          </form>
-        </form>
-      </div>
+<div class="container" *ngFor="let e of list">
+  <img ngClass="img" src="./../../../assets/karriery.png" />
+
+  <div class="info">
+    <div ngClass="div">
+      <div ngClass="gras">L’entreprise:</div>
+      <div>Karriery</div>
+    </div>
+    <div ngClass="div">
+      <div ngClass="gras">Numéro de commande :</div>
+      <div>{{ e.num }}</div>
+    </div>
+    <div ngClass="div">
+      <div ngClass="gras">Prix TTC:</div>
+      <div>{{ e.prix }}</div>
+    </div>
+    <div ngClass="div">
+      <div ngClass="gras">Pack:</div>
+      <div>{{ e.pack }}</div>
+    </div>
+    <hr ngClass="ligne" />
+    <div ngClass="div">
+      <div ngClass="gras">Réduction:</div>
+      <div>{{ e.reduction }}</div>
+    </div>
+    <hr ngClass="ligne" />
+    <div ngClass="div">
+      <div ngClass="gras">Sous-Total:</div>
+      <div>{{ e.SousTotal }}</div>
+    </div>
+    <hr ngClass="ligne" />
+    <div ngClass="div">
+      <div ngClass="gras">Total:</div>
+      <div>{{ e.Total }}</div>
     </div>
   </div>
 </div>

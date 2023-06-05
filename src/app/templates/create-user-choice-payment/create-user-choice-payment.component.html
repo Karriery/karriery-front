@@ -1,0 +1,19 @@
+<div ngClass="container">
+  <div ngClass="container_Top">
+    <app-card-profil-red></app-card-profil-red>
+  </div>
+  <div ngClass="container_Bottom">
+    <app-create-user-card-user2></app-create-user-card-user2>
+    <div ngClass="payment_buttons">
+      <h1>Méthode de paiement</h1>
+      <button ngClass="button" [routerLink]="'/createUser/PaymentVersement'">
+        Versement
+      </button>
+      <button ngClass="button">Carte Bancaire</button>
+      <button ngClass="button" [routerLink]="'/createUser/PaymentCash'">
+        Cash
+      </button>
+    </div>
+    <app-card-karriery></app-card-karriery>
+  </div>
+</div>
