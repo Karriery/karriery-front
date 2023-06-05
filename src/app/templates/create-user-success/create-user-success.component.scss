@@ -35,3 +35,20 @@
   font-size: 16px;
   font-weight: 400;
 }
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 1000;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

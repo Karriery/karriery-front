@@ -30,7 +30,8 @@
 }
 .div {
   display: grid;
-  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  place-items: start;
 }
 .Modifier {
   text-decoration: underline;
@@ -48,7 +49,8 @@
 .img {
   padding-top: 20px;
   border-radius: 10px;
-  width: 100px;
-  height: 100px;
+  width: 80%;
   margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }

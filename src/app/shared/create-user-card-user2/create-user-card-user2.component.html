@@ -1,20 +1,22 @@
-<div ngClass="body">
-  <div ngClass="containerr">
-    <img src="./../../../assets/Mask.png" alt="logo5" />
-    <div ngClass="container" id="container">
-      <div ngClass="form-container log-in-container">
-        <h1>Abid Saif</h1>
-        <h2>EVOLUTION</h2>
-        <h3>PACK</h3>
-        <span ngClass="span4">Email: </span>
-        <input type="email" placeholder="abid.Saif2009@gmail.com" />
+<div class="container" *ngFor="let e of list">
+  <img ngClass="img" src="{{ e.img }}" />
+  <h1 ngClass="title">{{ e.prenom }} {{ e.nom }}</h1>
 
-        <span ngClass="span5">numéro de téléphone: </span>
-        <input type="number" placeholder="99750415" />
-
-        <span ngClass="span6">Poste recherché:</span>
-        <input type="text" placeholder="UI/UX Designer " />
-      </div>
+  <div class="info">
+    <div ngClass="div">
+      <div ngClass="gras">{{ e.pack }} Pack</div>
+    </div>
+    <div ngClass="div">
+      <div ngClass="gras">Email:</div>
+      <div>{{ e.email }}</div>
+    </div>
+    <div ngClass="div">
+      <div ngClass="gras">numéro de téléphone:</div>
+      <div>{{ e.num }}</div>
+    </div>
+    <div ngClass="div">
+      <div ngClass="gras">Poste recherché :</div>
+      <div>{{ e.post }}</div>
     </div>
   </div>
 </div>
