@@ -10,7 +10,7 @@
           <h1 ngClass="title1">Information personnel</h1>
         </div>
         <div>Votre niveau d'études :</div>
-        <input ngClass="input" />
+        <input ngClass="input" #education />
         <div ngClass="margin_top">Veuillez entrer votre diplome :</div>
         <input ngClass="input" id="margin_top_input" />
         <div ngClass="margin_top">Veuillez entrer vos compétences :</div>
@@ -18,17 +18,26 @@
         <div ngClass="margin_top">
           Veuillez entrer expérience professionnelle :
         </div>
-        <input ngClass="input" id="textarea" />
+        <input ngClass="input" id="textarea" #about />
       </div>
 
       <div ngClass="container_right">
         <h1 ngClass="title2">Information carrière</h1>
         <hr ngClass="lign" />
         <div ngClass="padding_bottom">Poste recherché :</div>
-        <input ngClass="input" id="input" />
+        <input ngClass="input" id="input" #field />
         <div ngClass="margin_top">Entrez votre à propos ici</div>
         <input ngClass="input" id="input2" />
-        <button ngClass="button" [routerLink]="'/createUser/Success'">
+        <button
+          ngClass="button"
+          (click)="
+            update({
+              education: education.value,
+              about: about.value,
+              field: field.value
+            })
+          "
+        >
           Suivant
         </button>
       </div>

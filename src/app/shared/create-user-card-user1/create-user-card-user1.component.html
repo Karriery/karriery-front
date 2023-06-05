@@ -1,23 +1,11 @@
-<div class="container" *ngFor="let e of list">
-  <img ngClass="img" src="{{ e.img }}" />
-  <h1 ngClass="title">{{ e.prenom }} {{ e.nom }}</h1>
+<div class="container">
+  <img ngClass="img" src="{{ user.photo }}" />
+  <h1 ngClass="title">{{ user.firstname }} {{ user.lastname }}</h1>
   <hr ngClass="ligne" />
   <div class="info">
     <div ngClass="div">
-      <div>Nom:</div>
-      <div>{{ e.nom }}</div>
-      <div ngClass="Modifier">Modifier</div>
-    </div>
-    <div ngClass="div">
-      <div>Prénom:</div>
-      <div>{{ e.prenom }}</div>
-      <div ngClass="Modifier">Modifier</div>
-    </div>
-    <div ngClass="div">
       <div>Email:</div>
-      <div>{{ e.email }}</div>
-
-      <div ngClass="Modifier">Modifier</div>
+      <div>{{ user.email }}</div>
     </div>
   </div>
 </div>
