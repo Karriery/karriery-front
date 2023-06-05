@@ -1,90 +1,74 @@
 <div class="top"></div>
 
-<div class="container" *ngFor="let e of list">
+<div class="container">
   <h4 class="text-right">Vos données personnelles</h4>
   <div class="divv">
     <div ngClass="div">
       <div class="sous-div">Nom:</div>
-      <div>{{ e.nom }}</div>
-      <div ngClass="Modifier">Modifier</div>
-    </div>
-
-    <div ngClass="div">
-      <div class="sous-div">Prénom:</div>
-      <div>{{ e.prenom }}</div>
+      <div>{{ user.lastname }}</div>
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Email:</div>
-      <div>{{ e.email }}</div>
+      <div>{{ user.email }}</div>
       <div ngClass="Modifier">Modifier</div>
     </div>
     <div ngClass="div">
       <div class="sous-div">Télephone</div>
-      <div>{{ e.tel }}</div>
-
-      <div ngClass="Modifier">Modifier</div>
-    </div>
-    <div ngClass="div">
-      <div class="sous-div">Mot de passe</div>
-      <div>{{ e.pass }}</div>
-
-      <div ngClass="Modifier">Modifier</div>
-    </div>
-
-    <div ngClass="div">
-      <div class="sous-div">Pack</div>
-      <div>{{ e.pack }}</div>
+      <div>99 287 568</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Adresse</div>
-      <div>{{ e.adress }}</div>
+      <div>{{ user.address }}</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Ville</div>
-      <div>{{ e.ville }}</div>
+      <div>tunis</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Code Postal</div>
-      <div>{{ e.cp }}</div>
+      <div>2000</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Education</div>
-      <div>{{ e.educ }}</div>
+      <div>3ème année licence en communication multimédia</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Travaille</div>
-      <div>{{ e.work }}</div>
+      <div>Dentiste</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">Pays</div>
-      <div>{{ e.pays }}</div>
+      <div>{{ user.city }}</div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
 
     <div ngClass="div">
       <div class="sous-div">à Propos</div>
-      <div>{{ e.about }}</div>
+      <div>
+        Je m'appelle {{ user.lastname }} et je suis passionné par l'écriture
+        depuis que je suis enfant...
+      </div>
 
       <div ngClass="Modifier">Modifier</div>
     </div>
