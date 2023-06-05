@@ -17,6 +17,9 @@ import { VerificationPaymentComponent } from "./templates/verification-payment/v
 import { UserProfilComponent } from "./pages/user-profil/user-profil.component";
 import { UserDashboardComponent } from "./templates/user-dashboard/user-dashboard.component";
 import { UserProfilInfoPerComponent } from "./templates/user-profil-info-per/user-profil-info-per.component";
+import { UserProfilReunionComponent } from "./templates/user-profil-reunion/user-profil-reunion.component";
+import { UserProfilCommandesComponent } from "./templates/user-profil-commandes/user-profil-commandes.component";
+import { UserProfilFeedbackCoachComponent } from "./templates/user-profil-feedback-coach/user-profil-feedback-coach.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -29,6 +32,9 @@ const routes: Routes = [
     children: [
       { path: "userDashbord", component: UserDashboardComponent },
       { path: "infoPerso", component: UserProfilInfoPerComponent },
+      { path: "Reunion", component: UserProfilReunionComponent },
+      { path: "Commandes", component: UserProfilCommandesComponent },
+      { path: "FeedbackCoach", component: UserProfilFeedbackCoachComponent },
     ],
   },
   {
