@@ -9,6 +9,8 @@ import { CreateUserComponent } from "./pages/create-user/create-user.component";
 import { CreateUserPersonalInformationComponent } from "./templates/create-user-personal-information/create-user-personal-information.component";
 import { CreateUserCareeInformationComponent } from "./templates/create-user-caree-information/create-user-caree-information.component";
 import { CreateUserSuccessComponent } from "./templates/create-user-success/create-user-success.component";
+import { CreateUserConfirmationPackComponent } from "./templates/create-user-confirmation-pack/create-user-confirmation-pack.component";
+import { CreateUserChoicePaymentComponent } from "./templates/create-user-choice-payment/create-user-choice-payment.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -24,6 +26,14 @@ const routes: Routes = [
       {
         path: "Personal",
         component: CreateUserPersonalInformationComponent,
+      },
+      {
+        path: "ConfirmationPack",
+        component: CreateUserConfirmationPackComponent,
+      },
+      {
+        path: "ChoicePayment",
+        component: CreateUserChoicePaymentComponent,
       },
       {
         path: "Success",

@@ -48,6 +48,8 @@ import { CreateUserPersonalInformationComponent } from "./templates/create-user-
 import { CreateUserCareeInformationComponent } from "./templates/create-user-caree-information/create-user-caree-information.component";
 import { CardProfilRedComponent } from "./shared/card-profil-red/card-profil-red.component";
 import { CreateUserSuccessComponent } from './templates/create-user-success/create-user-success.component';
+import { CreateUserConfirmationPackComponent } from './templates/create-user-confirmation-pack/create-user-confirmation-pack.component';
+import { CreateUserChoicePaymentComponent } from './templates/create-user-choice-payment/create-user-choice-payment.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +87,8 @@ import { CreateUserSuccessComponent } from './templates/create-user-success/crea
     CreateUserCareeInformationComponent,
     CardProfilRedComponent,
     CreateUserSuccessComponent,
+    CreateUserConfirmationPackComponent,
+    CreateUserChoicePaymentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+<div ngClass="container">
+  <div ngClass="container_Top">
+    <app-card-profil-red></app-card-profil-red>
+  </div>
+  <div ngClass="container_Bottom">
+    <app-create-user-card-user1></app-create-user-card-user1>
+    <div ngClass="container_form">
+      <div>
+        <h1 ngClass="title1">Les packs</h1>
+        <hr ngClass="lign" />
+      </div>
+      <div ngClass="choice_select">
+        <h4>Vous avez choisir ce pack:</h4>
+        <select ngClass="select">
+          <option value="volvo">EVOLUTION PACK</option>
+          <option value="volvo">GROWTH PACK</option>
+          <option value="volvo">EXECUTIVE PACK</option>
+        </select>
+      </div>
+      <div ngClass="container_img_packs">
+        <div>
+          <img ngClass="img_packs" src="./../../../assets/GROWTHPACK.png" />
+        </div>
+        <div>
+          <img ngClass="img_packs" src="./../../../assets/EvolutionPACK.png" />
+        </div>
+        <div>
+          <img ngClass="img_packs" src="./../../../assets/ExecutivePACK.png" />
+        </div>
+      </div>
+      <button ngClass="button" [routerLink]="'/createUser/ChoicePayment'">
+        Confirmer votre demande
+      </button>
+    </div>
+  </div>
+</div>
