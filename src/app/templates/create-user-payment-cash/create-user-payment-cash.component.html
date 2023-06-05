@@ -2,7 +2,7 @@
 
 <div ngClass="container_success">
   <h1 ngClass="title"><span>Paiement</span> cash</h1>
-  <p>
+  <p ngClass="paragraph">
     Nous proposons également la possibilité de payer en espèces en personne. Si
     vous êtes à Tunis, vous pouvez rencontrer notre représentant<span
       >M.Halim Boussada (+216 58 065 605)</span
@@ -12,7 +12,10 @@
     sur la procédure de paiement et sur les horaires et lieux de rendez-vous."
   </p>
 
-  <p>Veuillez télécharger votre reçu de paiement ici.</p>
-
+  <p ngClass="paragraph2">Veuillez télécharger votre reçu de paiement ici.</p>
+  <div ngClass="input_form">
+    <button ngClass="button2">choisir un fichier</button>
+    <div ngClass="input_text">Aucun fichier choisi</div>
+  </div>
   <input ngClass="button" type="submit" value="Envoyer" />
 </div>
