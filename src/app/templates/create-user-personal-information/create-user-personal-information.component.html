@@ -10,25 +10,36 @@
           <h1 ngClass="title1">Information personnel</h1>
           <hr ngClass="lign" />
         </div>
+        <div>Nom:</div>
+        <input ngClass="input" placeholder="Nom" #lastname />
         <div>Veuillez enter votre numéro de téléphone :</div>
-        <input ngClass="input" placeholder="(+216)" />
+        <input ngClass="input" placeholder="(+216)" #phonenumber />
         <div ngClass="padding_top">Veuillez enter votre pays :</div>
-        <input ngClass="input" placeholder="Tunisie" />
+        <input ngClass="input" placeholder="Tunisie" #country />
         <div ngClass="padding_top">Veuillez enter votre ville :</div>
-        <input ngClass="input" placeholder="Entrer votre ville" />
+        <input ngClass="input" placeholder="Entrer votre ville" #city />
         <div ngClass="padding_top">Veuillez enter votre adresse :</div>
-        <input ngClass="input" placeholder="Entrer votre adresse " />
+        <input ngClass="input" placeholder="Entrer votre adresse " #address />
         <div ngClass="padding_top">Veuillez enter votre code postal :</div>
-        <input ngClass="input" placeholder="Entrer votre code postal " />
+        <input
+          ngClass="input"
+          placeholder="Entrer votre code postal "
+          #postcode
+        />
       </div>
 
       <div ngClass="container_right">
         <h1 ngClass="title2">Information carrière</h1>
+        <div>Prenom:</div>
+        <input ngClass="input" id="input" placeholder="Prenom" #firstname />
         <div>Veuillez télécharger votre CV ci-dessous :</div>
         <input ngClass="input" id="input" />
         <div>Veuillez entrer votre lien du profil LinkedIn ci-dessous :</div>
         <input ngClass="input" id="input2" />
-        <button ngClass="button" [routerLink]="'/createUser/Caree'">
+        <button
+          ngClass="button"
+          (click)="update({firstname : firstname.value ,lastname : lastname.value , phonenumber : phonenumber.value , country : country.value , city : city.value , address : address.value ,   })"
+        >
           Suivant
         </button>
       </div>

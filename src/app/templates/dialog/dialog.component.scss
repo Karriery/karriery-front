@@ -43,4 +43,14 @@
 .input_icon {
   display: grid;
   grid-template-columns: 1fr 10fr;
+  align-items: center;
+  grid-gap: 1em;
+  margin: 10px;
+}
+
+.input-form {
+   width: 94%;
+   height: 30px;
+   border: 1px solid gray;
+   border-radius: 5px;
 }
