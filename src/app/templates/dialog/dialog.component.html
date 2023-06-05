@@ -2,46 +2,35 @@
   <h1>Se connecter</h1>
   <div ngClass="input_icon">
     <mat-icon> mail_outline</mat-icon
-    ><app-input text="Email" type="email" value=" email "></app-input>
+    ><input class="input-form" type="text" #email />
   </div>
-  <div ngClass="input_icon">
+  <div ngClass="input_icon" style="margin-bottom: 20px">
     <mat-icon>https</mat-icon>
-    <app-input
-      text="Mot de passe"
-      ype="password"
-      value=" password "
-    ></app-input>
+    <input type="password" class="input-form" #password />
   </div>
-  <button ngClass="button" (click)="signup()">Connexion</button>
-  <h4>Créer un compte</h4>
+  <button ngClass="button" (click)="login(email.value, password.value)">
+    Connexion
+  </button>
+  <h4 (click)="gotosignup()">Créer un compte</h4>
 </div>
 <div *ngIf="entryData.use === 'signup'" ngClass="container">
   <h1>Créer un compte</h1>
   <div ngClass="input_icon">
     <mat-icon>https</mat-icon>
-    <app-input text="Nom complet" type="email" value=" email "></app-input>
-  </div>
-  <div ngClass="input_icon">
-    <mat-icon>https</mat-icon>
-    <app-input text="Email" type="email" value=" email "></app-input>
-  </div>
-  <div ngClass="input_icon">
-    <mat-icon>https</mat-icon>
-    <app-input
-      text="Mot de passe"
-      type="password"
-      value=" password "
-    ></app-input>
-  </div>
-  <div ngClass="input_icon">
-    <mat-icon>https</mat-icon>
-    <app-input
-      text="Confirmation Mot de passe"
-      type="password"
-      value=" password "
-    ></app-input>
+    <input class="input-form" type="text" #emails />
   </div>
 
-  <button ngClass="button" (click)="login()">Inscription</button>
-  <h4>vous étes déja inscrit?<span>login</span></h4>
+  <div ngClass="input_icon">
+    <mat-icon>https</mat-icon>
+    <input class="input-form" type="text" #passwords />
+  </div>
+  <div ngClass="input_icon">
+    <mat-icon>https</mat-icon>
+    <input class="input-form" type="text" #passwords2 />
+  </div>
+
+  <button ngClass="button" (click)="signup(emails.value, passwords.value)">
+    Inscription
+  </button>
+  <h4>vous étes déja inscrit?<span (click)="gotologin()">login</span></h4>
 </div>
