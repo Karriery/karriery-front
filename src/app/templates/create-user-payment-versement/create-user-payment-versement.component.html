@@ -14,5 +14,10 @@
     <button ngClass="button2">choisir un fichier</button>
     <div ngClass="input_text">Aucun fichier choisi</div>
   </div>
-  <input ngClass="button" type="submit" value="Envoyer" />
+  <input
+    ngClass="button"
+    type="submit"
+    value="Envoyer"
+    [routerLink]="'/createUser/VerificationPayment'"
+  />
 </div>

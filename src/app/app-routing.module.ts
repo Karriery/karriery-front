@@ -13,6 +13,7 @@ import { CreateUserConfirmationPackComponent } from "./templates/create-user-con
 import { CreateUserChoicePaymentComponent } from "./templates/create-user-choice-payment/create-user-choice-payment.component";
 import { CreateUserPaymentVersementComponent } from "./templates/create-user-payment-versement/create-user-payment-versement.component";
 import { CreateUserPaymentCashComponent } from "./templates/create-user-payment-cash/create-user-payment-cash.component";
+import { VerificationPaymentComponent } from "./templates/verification-payment/verification-payment.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -41,6 +42,10 @@ const routes: Routes = [
       {
         path: "PaymentVersement",
         component: CreateUserPaymentVersementComponent,
+      },
+      {
+        path: "VerificationPayment",
+        component: VerificationPaymentComponent,
       },
       {
         path: "Success",

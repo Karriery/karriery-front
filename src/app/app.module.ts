@@ -52,6 +52,7 @@ import { CreateUserConfirmationPackComponent } from './templates/create-user-con
 import { CreateUserChoicePaymentComponent } from './templates/create-user-choice-payment/create-user-choice-payment.component';
 import { CreateUserPaymentCashComponent } from './templates/create-user-payment-cash/create-user-payment-cash.component';
 import { CreateUserPaymentVersementComponent } from './templates/create-user-payment-versement/create-user-payment-versement.component';
+import { VerificationPaymentComponent } from './templates/verification-payment/verification-payment.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +94,7 @@ import { CreateUserPaymentVersementComponent } from './templates/create-user-pay
     CreateUserChoicePaymentComponent,
     CreateUserPaymentCashComponent,
     CreateUserPaymentVersementComponent,
+    VerificationPaymentComponent,
   ],
   imports: [
     BrowserModule,
