@@ -1,22 +1,19 @@
-<div class="container" *ngFor="let e of list">
-  <img ngClass="img" src="{{ e.img }}" />
-  <h1 ngClass="title">{{ e.prenom }} {{ e.nom }}</h1>
+<div class="container">
+  <img ngClass="img" src="{{ user.photo }}" />
+  <h1 ngClass="title">{{ user.lastname }} {{ user.firstname }}</h1>
 
   <div class="info">
     <div ngClass="div">
-      <div ngClass="gras">{{ e.pack }} Pack</div>
-    </div>
-    <div ngClass="div">
       <div ngClass="gras">Email:</div>
-      <div>{{ e.email }}</div>
+      <div>{{ user.email }}</div>
     </div>
     <div ngClass="div">
       <div ngClass="gras">numéro de téléphone:</div>
-      <div>{{ e.num }}</div>
+      <div>{{ user.phonenumber }}</div>
     </div>
     <div ngClass="div">
       <div ngClass="gras">Poste recherché :</div>
-      <div>{{ e.post }}</div>
+      <div>{{ user.field }}</div>
     </div>
   </div>
 </div>

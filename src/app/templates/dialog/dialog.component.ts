@@ -35,6 +35,8 @@ export class DialogComponent {
       console.log(data)
          if(data.token) {
            localStorage.setItem("token" , data.token)
+          this.router.navigateByUrl("/userProfil/userDashbord")
+          this.dialogRef.close();
          } else {
 
          }
@@ -44,12 +46,10 @@ export class DialogComponent {
   signup(email : any , password : any){
     this.auth.register(email , password).subscribe((data : any)=>{
       console.log(data)
-
         if(data.token) {
           localStorage.setItem("token" , data.token)
           this.router.navigateByUrl("/createUser/Personal")
           this.dialogRef.close();
-
         } else {
          
         }

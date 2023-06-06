@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { PacksService } from "src/app/serveces/packs.service";
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: "app-card-karriery",
@@ -16,4 +18,14 @@ export class CardKarrieryComponent {
       SousTotal: "99 DT",
     },
   ];
+  constructor(private packs : PacksService , private route: ActivatedRoute){}
+  pack : any 
+  ngOnInit(){
+    this.route.queryParams.subscribe((queryParams: any) => {
+    this.packs.getById(queryParams.id).subscribe((data : any)=>{
+      console.log(data)
+      this.pack = data
+    })
+     })
+  }
 }

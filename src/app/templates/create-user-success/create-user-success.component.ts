@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-
+import { Router } from "@angular/router";
 @Component({
   selector: "app-create-user-success",
   templateUrl: "./create-user-success.component.html",

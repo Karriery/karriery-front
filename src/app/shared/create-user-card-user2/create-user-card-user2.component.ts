@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from "src/app/auth.service";
 
 @Component({
   selector: "app-create-user-card-user2",
@@ -15,4 +17,19 @@ export class CreateUserCardUser2Component {
       email: "saif.abid@gmail.com",
     },
   ];
+  constructor(private auth : AuthService , private router : Router){}
+  user : any
+  ngOnInit(){
+    this.auth.verify().subscribe(
+      data => {
+        console.log(data)
+        this.user = data
+      },
+      err => {
+        localStorage.clear()
+        this.router.navigateByUrl('/')
+      }
+    );
+  }
+  
 }

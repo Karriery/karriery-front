@@ -7,9 +7,12 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 export class PacksService {
 
   constructor(private http: HttpClient) {}
-  ROOT_URL = "https://dev.karriery.com/pack/";
+  ROOT_URL = "http://localhost:3636/pack/";
 
   getAll() {
     return this.http.get(this.ROOT_URL + "");
+  }
+  getById(id :any) {
+    return this.http.get(this.ROOT_URL + id);
   }
 }
