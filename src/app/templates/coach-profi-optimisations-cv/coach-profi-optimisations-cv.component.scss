@@ -1,0 +1,44 @@
+.table {
+    margin: 0 auto;
+  width: 80%;
+  thead {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #262e2e;
+  }
+  tbody {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+    color: #000000;
+  }
+}
+.ligne {
+  border: 1px solid rgba(153, 128, 128, 1);
+  width: 450%;
+  margin: 0 auto;
+}
+.button_table_cv {
+  border: 1px solid rgba(164, 27, 52, 1);
+  border-radius: 5px;
+  width: 150px;
+  height: 28px;
+  text-align: center;
+}
+.button_table_plus {
+  margin: 0 auto;
+  width: 60px;
+  height: 28px;
+  color: white;
+  font-size: larger;
+  background: #a41b34;
+  border-radius: 5px;
+  border: none;
+}

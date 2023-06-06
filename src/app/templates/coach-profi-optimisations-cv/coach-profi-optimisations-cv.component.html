@@ -1,1 +1,36 @@
-<p>coach-profi-optimisations-cv works!</p>
+<div class="tableau">
+   <!-------------------------------------------------->
+    <!-------------------------------------------------->
+    <table class="table">
+      <thead>
+        <tr>
+          <td>Nom du candidat</td>
+          <td>Pack</td>
+          <td>Post</td>
+          <td>Date</td>
+          <td>CV optimisé</td>
+          <td> Ajouter un candidat</td>
+        </tr>
+      </thead>
+      <hr ngClass="ligne"/>
+      <tbody style="border-color: transparent">
+        <tr *ngFor="let e of list">
+          <td data-label="Les tâches à faire">
+        {{e.firstname}}
+          </td>
+          <td data-label="Pack">{{e.pack}} <span>PACK</span></td>
+          <td data-label="Date">{{e.job}}</td>
+          <td data-label="Date limite">{{e.date}}</td>
+          <td data-label="Action">
+            <div class="button_table_cv">{{e.cv}}</div>
+          </td>
+            <td data-label="Action">
+            <button class="button_table_plus">+</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+ 
+  </div>
+
