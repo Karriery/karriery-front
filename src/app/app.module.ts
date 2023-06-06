@@ -59,6 +59,17 @@ import { UserProfilInfoPerComponent } from './templates/user-profil-info-per/use
 import { UserProfilReunionComponent } from './templates/user-profil-reunion/user-profil-reunion.component';
 import { UserProfilCommandesComponent } from './templates/user-profil-commandes/user-profil-commandes.component';
 import { UserProfilFeedbackCoachComponent } from './templates/user-profil-feedback-coach/user-profil-feedback-coach.component';
+import { CoachProfilComponent } from './pages/coach-profil/coach-profil.component';
+import { CoachProfilDashbordComponent } from './templates/coach-profil-dashbord/coach-profil-dashbord.component';
+import { CoachProfilInfoPerComponent } from './templates/coach-profil-info-per/coach-profil-info-per.component';
+import { CoachProfilTransactionsComponent } from './templates/coach-profil-transactions/coach-profil-transactions.component';
+import { CoachProfiArchiveComponent } from './templates/coach-profi-archive/coach-profi-archive.component';
+import { CoachProfiFeedbackComponent } from './templates/coach-profi-feedback/coach-profi-feedback.component';
+import { CoachProfiReunionComponent } from './templates/coach-profi-reunion/coach-profi-reunion.component';
+import { CoachProfiListeFeedbacksComponent } from './templates/coach-profi-liste-feedbacks/coach-profi-liste-feedbacks.component';
+import { CoachProfiListeCvComponent } from './templates/coach-profi-liste-cv/coach-profi-liste-cv.component';
+import { CoachProfiAjouterCandidatsComponent } from './templates/coach-profi-ajouter-candidats/coach-profi-ajouter-candidats.component';
+import { CoachProfiOptimisationsCVComponent } from './templates/coach-profi-optimisations-cv/coach-profi-optimisations-cv.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +118,17 @@ import { UserProfilFeedbackCoachComponent } from './templates/user-profil-feedba
     UserProfilReunionComponent,
     UserProfilCommandesComponent,
     UserProfilFeedbackCoachComponent,
+    CoachProfilComponent,
+    CoachProfilDashbordComponent,
+    CoachProfilInfoPerComponent,
+    CoachProfilTransactionsComponent,
+    CoachProfiArchiveComponent,
+    CoachProfiFeedbackComponent,
+    CoachProfiReunionComponent,
+    CoachProfiListeFeedbacksComponent,
+    CoachProfiListeCvComponent,
+    CoachProfiAjouterCandidatsComponent,
+    CoachProfiOptimisationsCVComponent,
   ],
   imports: [
     BrowserModule,

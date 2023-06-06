@@ -1,3 +1,7 @@
+import { CoachProfiListeFeedbacksComponent } from './templates/coach-profi-liste-feedbacks/coach-profi-liste-feedbacks.component';
+import { CoachProfiFeedbackComponent } from './templates/coach-profi-feedback/coach-profi-feedback.component';
+import { CoachProfilTransactionsComponent } from './templates/coach-profil-transactions/coach-profil-transactions.component';
+import { CoachProfilDashbordComponent } from './templates/coach-profil-dashbord/coach-profil-dashbord.component';
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ReadMeComponent } from "./pages/read-me/read-me.component";
@@ -20,6 +24,13 @@ import { UserProfilInfoPerComponent } from "./templates/user-profil-info-per/use
 import { UserProfilReunionComponent } from "./templates/user-profil-reunion/user-profil-reunion.component";
 import { UserProfilCommandesComponent } from "./templates/user-profil-commandes/user-profil-commandes.component";
 import { UserProfilFeedbackCoachComponent } from "./templates/user-profil-feedback-coach/user-profil-feedback-coach.component";
+import { CoachProfilComponent } from "./pages/coach-profil/coach-profil.component";
+import { CoachProfilInfoPerComponent } from './templates/coach-profil-info-per/coach-profil-info-per.component';
+import { CoachProfiArchiveComponent } from './templates/coach-profi-archive/coach-profi-archive.component';
+import { CoachProfiReunionComponent } from './templates/coach-profi-reunion/coach-profi-reunion.component';
+import { CoachProfiListeCvComponent } from './templates/coach-profi-liste-cv/coach-profi-liste-cv.component';
+import { CoachProfiAjouterCandidatsComponent } from './templates/coach-profi-ajouter-candidats/coach-profi-ajouter-candidats.component';
+import { CoachProfiOptimisationsCVComponent } from './templates/coach-profi-optimisations-cv/coach-profi-optimisations-cv.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -35,6 +46,23 @@ const routes: Routes = [
       { path: "Reunion", component: UserProfilReunionComponent },
       { path: "Commandes", component: UserProfilCommandesComponent },
       { path: "FeedbackCoach", component: UserProfilFeedbackCoachComponent },
+    ],
+  },
+  {
+    path: "ProfilCoach",
+    component: CoachProfilComponent,
+    children: [
+      { path: "CoachDashbord", component: CoachProfilDashbordComponent },
+      { path: "infoPerso", component:CoachProfilInfoPerComponent },
+      { path: "transactions", component:CoachProfilTransactionsComponent },
+      { path: "Archive", component:CoachProfiArchiveComponent },
+      { path: "feedback", component:CoachProfiFeedbackComponent },
+      { path: "reunion", component:CoachProfiReunionComponent},
+      { path: "listeFeedbacks", component:CoachProfiListeFeedbacksComponent },
+      { path: "listeCV", component:CoachProfiListeCvComponent },
+      { path: "AjouterCandidats", component:CoachProfiAjouterCandidatsComponent },
+      { path: "optimisationsCV", component: CoachProfiOptimisationsCVComponent },
+     
     ],
   },
   {
