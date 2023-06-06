@@ -112,11 +112,13 @@
   }
   
   .block{
-      display: flex;
-      flex-direction: column;
+    display: grid;
   }
   
-  hr .new4 {
+ .new4 {
+  width: 80%;
+  margin: 0 auto;
+  height: 2px;
       border: 1px solid black;
     }
     
