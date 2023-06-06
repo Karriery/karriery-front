@@ -11,10 +11,10 @@
       </div>
       <div ngClass="choice_select">
         <h4>Vous avez choisir ce pack:</h4>
-        <select ngClass="select">
-          <option value="volvo">EVOLUTION PACK</option>
-          <option value="volvo">GROWTH PACK</option>
-          <option value="volvo">EXECUTIVE PACK</option>
+        <select ngClass="select" #choose>
+          <option [value]="packsList[0]._id">EVOLUTION PACK</option>
+          <option [value]="packsList[1]._id">GROWTH PACK</option>
+          <option [value]="packsList[2]._id">EXECUTIVE PACK</option>
         </select>
       </div>
       <div ngClass="container_img_packs">
@@ -28,7 +28,7 @@
           <img ngClass="img_packs" src="./../../../assets/ExecutivePACK.png" />
         </div>
       </div>
-      <button ngClass="button" [routerLink]="'/createUser/ChoicePayment'">
+      <button ngClass="button" (click)="startOrder(choose.value)">
         Confirmer votre demande
       </button>
     </div>

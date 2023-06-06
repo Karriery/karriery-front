@@ -9,10 +9,8 @@
       <button ngClass="button" [routerLink]="'/createUser/PaymentVersement'">
         Versement
       </button>
-      <button ngClass="button">Carte Bancaire</button>
-      <button ngClass="button" [routerLink]="'/createUser/PaymentCash'">
-        Cash
-      </button>
+      <button ngClass="button" (click)="payOnline()">Carte Bancaire</button>
+      <button ngClass="button" (click)="createReservation()">Cash</button>
     </div>
     <app-card-karriery></app-card-karriery>
   </div>
