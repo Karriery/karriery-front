@@ -116,10 +116,13 @@
   }
   
  .new4 {
-  width: 80%;
+  background: rgba(156, 156, 156, 1);
+ border: none;
+  width: 100%;
   margin: 0 auto;
+  margin-top: -50px;
   height: 2px;
-      border: 1px solid black;
+  
     }
     
   .sous-block{ 
@@ -127,4 +130,36 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+  }
+  .button_card{
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    
+    color: #FFFFFF;
+
+width: 108px;
+height: 31px;
+background: #262E2E;
+border-radius: 20px;
+  }
+  .div_check{
+    display: grid;
+    grid-template-columns: 8fr 1fr ;
+  }
+  .div_items{
+ 
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    h1{font-family: "Montserrat",sans-serif;
+    
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      
+      color: #000000;}
+    h3{}
   }

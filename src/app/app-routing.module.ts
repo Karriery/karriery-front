@@ -44,7 +44,7 @@ const routes: Routes = [
       { path: "userDashbord", component: UserDashboardComponent },
       { path: "infoPerso", component: UserProfilInfoPerComponent },
       { path: "Reunion", component: UserProfilReunionComponent },
-      { path: "Commandes", component: UserProfilCommandesComponent },
+      { path: "commandes", component: UserProfilCommandesComponent },
       { path: "FeedbackCoach", component: UserProfilFeedbackCoachComponent },
     ],
   },
