@@ -45,7 +45,7 @@ const routes: Routes = [
       { path: "infoPerso", component: UserProfilInfoPerComponent },
       { path: "Reunion", component: UserProfilReunionComponent },
       { path: "commandes", component: UserProfilCommandesComponent },
-      { path: "FeedbackCoach", component: UserProfilFeedbackCoachComponent },
+      { path: "userFeedBack", component:UserProfilFeedbackCoachComponent },
     ],
   },
   {
