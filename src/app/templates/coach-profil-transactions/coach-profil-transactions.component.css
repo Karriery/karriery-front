@@ -1,0 +1,181 @@
+.first{
+    margin: 3% 0 0 10%;
+}
+
+.myButton {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 1px solid #292d32;
+  display: inline-block;
+  cursor: pointer;
+  color: #292d32;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 7px 20px;
+}
+.myButtonBlack {
+  border-radius: 10px;
+  background-color: #292d32;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-family: Arial;
+  font-size: 14px;
+  width: 240px;
+  height: 60px;
+  padding: 7px 25px;
+  margin-left: 3%;
+}
+h6 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  margin-right: 25px;
+  line-height: 118.4%;
+}
+.myButtonRed {
+  border-radius: 10px;
+  background-color: #ce1b3c;
+  border: none;
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 7px 25px;
+}
+
+.blueTable{
+    margin-left: 10%;
+}
+table.blueTable td,
+table.blueTable th {
+  padding: 15px 15px;
+  padding-left: 20px;
+}
+
+table.blueTable thead {
+  border-top: 1px solid #998080;
+}
+table.blueTable thead th {
+  color: #262e2e;
+}
+table.blueTable {
+  font-size: 14px;
+  text-align: center;
+  width: auto;
+  border-collapse: collapse;
+}
+.inputs2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.ajouter {
+  width: 247px;
+  height: 52px;
+  margin-left: 20px;
+  background: #262e2e;
+  border-radius: 15px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+  text-align: left;
+  color: #292d32;
+}
+
+.dropdown {
+  margin-left: 20px;
+  position: relative;
+  display: inline-block;
+}
+.inputs {
+  display: flex;
+  justify-content: start;
+  align-items: space-between;
+  flex-direction: column;
+}
+.dropdown-btn {
+  display: flex; /* use flexbox to align content and arrow */
+  align-items: center; /* center vertically */
+  justify-content: space-between; /* separate content and arrow */
+  background: transparent;
+  border: 1px solid #bababa;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 20px; /* adjust for desired padding */
+  font-size: 18px;
+  color: #000;
+}
+.arrow {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.dropdown-content {
+  border: 1px solid #bababa;
+  border-radius: 15px;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  padding: 10px; /* adjust for desired padding */
+}
+
+.dropdown-content li {
+  padding: 5px 10px; /* adjust for desired padding */
+}
+
+.dropdown-content li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.Search {
+  border: 1px solid #bababa;
+  border-radius: 15px;
+  width: 380px;
+  height: 52px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  background-origin: padding-box;
+  background-position: 20px;
+  background-position: left center;
+  color: #808080;
+}
+.buttontheni {
+  color: white;
+  background-color: #a41b34;
+  border-radius: 5px;
+  width: 60px;
+  height: 28px;
+}
+
+.title {
+    font-size: 16px;
+}
+

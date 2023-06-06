@@ -1,72 +1,204 @@
-<div class="main-container">
-    <div class="container-left">
-      <div class="current-pack">
-        <div class="box_one">
-          <h2>Pack:</h2>
-          <h1 class="pack">Growth Pack</h1>
-          <h4>Valable jusqu’au 20/06/2023</h4>
-        </div>
-  
-        <div class="meetings">
-          <div class="left">
-            <div class="box_two">
-              <h4><img src="./assets/calendar-menu.png" />Prochaine Réunion</h4>
-              <div class="box_22">
-                <div class="box222">
-                  <p class="p1">Lundi</p>
-                  <p class="p2">30</p>
-                </div>
-              </div>
+<div class="tableau_de_bord">
+
+  <div class="tache">
+    <div class="tache_carousel">
+      <p class="paragraph">
+        <span>Bienvenue</span>
+        dans votre espace de tableau de bord de coach !
+        <br /><br />
+        Ici, vous pouvez suivre vos tâches à faire, gérer vos réunions,
+        examiner les CV des candidats et bien plus encore.
+      </p>
+      <!---->
+      <div id="wrapper">
+        <div id="carousel">
+          <div id="content">
+            <div class="item" id="it">
+              <img src="./assets/calenda.png" />Voir tout les candidatures
+            </div>
+            <div class="item" id="it">
+              <img src="./assets/dollar1.png" />Mon Compte
+            </div>
+            <div class="item" id="it">
+              <img src="./assets/calenda1.png" />Liste des Réunions
+            </div>
+            <div class="item" id="it">
+              <img src="./assets/chatt1.png" />Liste des feedback
+            </div>
+            <div class="item" id="it">
+              <img src="./assets/time.png" />Votre historique Karriery
             </div>
           </div>
-          <div class="right">
-            <div class="main-progress2-cbar">
-              <h4><img src="./assets/progress.png" />Profil complet</h4>
-              <img src="./../../../assets/profile_completed.png">
-            </div>
-          </div>
         </div>
-  
-        <div class="steps">
-          <h1>CV en cours d'amélioration</h1>
-         <img class="progress_bar_img" src="./../../../assets/progress_bar.png">
-          <button class="progress_button" >Telecharger votre CV</button>
-        </div>
+        <button id="prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path
+              d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z"
+            />
+          </svg>
+        </button>
+        <button id="next" >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="none" d="M0 0h24v24H0V0z" />
+            <path
+              d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z"
+            />
+          </svg>
+        </button>
       </div>
-  
-      
+      <!---->
     </div>
-    <div class="container-right">
-      <div class="container" id="height">
-        <h1 class="title_card">Mon Profile</h1>
-        <img ngClass="img" src="{{ user.photo }}" />
-        <h1 ngClass="title">{{ user.lastname }}</h1>
-        <div class="title_card">Compte vérifier</div>
-        <div ngClass="buttonsCard">
-          <button ngClass="button_pen"><img src="./../../../assets/pen.png"></button>
-          <button ngClass="button_card">Voir le profil complet</button></div>
-        <hr ngClass="ligne" />
-        <h2>Mes dernières transactions:</h2>
-        <div ngClass="HistoriquePack" >
-          <div>
-            <div>
-              <h3>Growth Pack</h3>
-              <button class="img_button">Voir Détais</button>
-            </div>
-            
-          </div>
-          <div>
-            <div>
-              <div>29/03/2023</div>
-              <br>
-            </div>
-            
-          </div>
+    <div class="tableau">
+      <h1 class="title_tableau">Liste des tâches en attente</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>Les tâches à faire</td>
+            <td>Pack</td>
+            <td>Date</td>
+            <td>Date limite</td>
+            <td>Action</td>
+          </tr>
+        </thead>
+        <tbody style="border-color: transparent">
+          <tr>
+            <td data-label="Les tâches à faire">
+              <img
+                class="background"
+                src="./assets/conversation.png"
+              />Feedback sur un CV
+            </td>
+            <td data-label="Pack">EXECUTIVE <span>PACK</span></td>
+            <td data-label="Date">6/04</td>
+            <td data-label="Date limite">13/04</td>
+            <td data-label="Action">
+              <button class="button_table">Détails</button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Les tâches à faire">
+              <img
+                class="background"
+                src="./assets/approved1.png"
+              />Optimisation du CV
+            </td>
+            <td data-label="Pack">EXECUTIVE <span>PACK</span></td>
+            <td data-label="Date">2/04</td>
+            <td data-label="Date limite">9/04</td>
+            <td data-label="Action">
+              <button class="button_table">Détails</button>
+            </td>
+          </tr>
+          <tr>
+            <td data-label="Les tâches à faire">
+              <img
+                class="background"
+                src="./assets/calendar.png"
+              />Réunion administrative
+            </td>
+            <td data-label="Pack">GROWTH <span>PACK</span></td>
+            <td data-label="Date">31/03</td>
+            <td data-label="Date limite">7/04</td>
+            <td data-label="Action">
+              <button class="button_table">Détails</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="search">
+        <div>
+          <input
+            class="input_search"
+            placeholder=" Recherchez par mots-clés"
+          />
         </div>
-        <div class="info">
-         
-         
+        <button class="button_tache">Voir toutes les tâches</button>
+        <div>
+          <button class="button_Ajouter">
+            + Ajouter une nouvelle tâche
+          </button>
         </div>
       </div>
     </div>
   </div>
+  <div class="calendrier">
+    <div>
+      <!-------------------------------------------------------------->
+      <div class="mesure">Calendrier de planification</div>
+      <br />
+      <div class="calendar">
+        <div class="calendar_color">
+          <div>Lun</div>
+          <div>5</div>
+        </div>
+        <div class="calendar_color">
+          <div>Mar</div>
+          <div>6</div>
+        </div>
+        <div class="calendar_colorM">
+          <div>Mer</div>
+          <div>7</div>
+        </div>
+        <div class="calendar_color">
+          <div>Jeu</div>
+          <div>8</div>
+        </div>
+        <div class="calendar_color">
+          <div>Ven</div>
+          <div>9</div>
+        </div>
+        <div class="calendar_color">
+          <div>Sam</div>
+          <div>10</div>
+        </div>
+        <div class="calendar_color">
+          <div>Dim</div>
+          <div>11</div>
+        </div>
+      </div>
+      <!-------------------------------------------------------------->
+    </div>
+    <div class="mesure">
+      Mesure de la productivité<img
+        style="width: 100%"
+        src="./assets/mesure.png"
+      />
+    </div>
+    <div class="Candidats_box">
+      Candidats en cours
+      <br />
+      <br />
+      <div class="candidats">
+        <div>
+          <div class="background_image1"></div>
+          Imen
+          <div class="fleche">></div>
+          <div>Growth Pack</div>
+        </div>
+        <div>
+          <div class="background_image2"></div>
+          Saif
+          <div class="fleche">></div>
+          <div>Evolution Pack</div>
+        </div>
+        <div>
+          <div class="background_image1"></div>
+          Imen
+          <div class="fleche">></div>
+          <div>Growth Pack</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
