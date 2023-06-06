@@ -1,75 +1,160 @@
 /**************************************************************/
 
 .main-container {
-  background-color: aquamarine;
   display: grid;
   width: 100%;
-  grid-template-columns: 3fr 2fr;
-  margin: 5% 0 5% 3%;
+  grid-template-columns: 2fr 1fr;
+ 
 }
+.HistoriquePack{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  h3{
+    color: rgba(164, 27, 52, 1);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: start;
+    
+  }
+}
+.img_button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
 
+  border: transparent;
+  padding: 1px;
+  background-color: transparent;
+  cursor: pointer;
+}
 .container-right {
-  background-color: rosybrown;
   width: 100%;
+
 }
 
 .current-pack {
-  background-color: forestgreen;
+ 
   width: 100%;
   height: 50%;
 }
-
+#height{
+  height: 70vh;
+}
 .meetings {
-  background-color: gainsboro;
-  width: 100%;
+
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 3%;
+ padding: 30px;
 }
 
 .steps {
-  background-color: violet;
-  width: 100%;
-}
+  display: grid;
+  
+ 
+  place-items: center;
+  background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+width: 70%;
 
+padding: 20px;
+margin-left: 30px;
+  h3{
+font-family: "Montserrat",sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+place-self: center;
+text-align: center;
+
+color: #262E2E;
+  }
+}
+.progress_button{
+color:white ; 
+border: transparent;
+margin: 0 auto;
+place-self: center;
+width: 260px;
+height: 46px;
+background: #CE1B3C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
 .left {
-  background-color: rgb(32, 13, 118);
+
   width: 100%;
 }
 
 .right {
-  background-color: rgb(182, 197, 19);
+  
   width: 100%;
 }
 
 .container-left {
-  background-color: fuchsia;
-  width: 100%;
+  
+  height: 70vh;
   display: grid;
   width: 100%;
+  padding-left: 50px;
+  padding-top: 50px;
   grid-template-rows: 1fr 1fr 1fr;
 }
+.title_card{
+  text-align: center;
+}
+.buttonsCard{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.button_pen{
+  height: 35px;
+  width: 40px;
+  padding: 3px;
+  border: 1px solid rgba(38, 46, 46, 1);
+  border-radius: 5px;
+  background-color: transparent;
+}
+.button_card{
+  height: 35px;
+width: 150px;
+border: 1px solid rgba(38, 46, 46, 1);
+border-radius: 5px;
+background-color: transparent;
 
+}
 .box_one {
   box-shadow: 0 0 0.4rem 0 #e81a41;
   border-radius: 10px;
   background-color: white;
-  width: 60%;
-  height: 40%;
+  width: 70%;
+  height: 100px;
   padding: 20px;
+  margin-left: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(232, 26, 65, 0.5);
+
 }
 
 .box_one h4 {
   font-size: 12px;
 }
 
-box_22 {
+.box_22 {
   background-color: #ce1b3c;
-  width: 70%;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
   padding: 5%;
   border-color: #ce1b3c;
-  margin-top: 10%;
+ 
 }
 
 .box222 .p2 {
@@ -80,7 +165,8 @@ box_22 {
 .box222 {
   background-color: white;
   border-radius: 5%;
-  padding: 10% 35%;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -247,376 +333,16 @@ box_22 {
 }
 
 /* Progress bar rotation position */
-.progress2-circle.p0 .value-bar {
-  display: none;
-}
-.progress2-circle.p1 .value-bar {
-  transform: rotate(4deg);
-}
-.progress2-circle.p2 .value-bar {
-  transform: rotate(7deg);
-}
-.progress2-circle.p3 .value-bar {
-  transform: rotate(11deg);
-}
-.progress2-circle.p4 .value-bar {
-  transform: rotate(14deg);
-}
-.progress2-circle.p5 .value-bar {
-  transform: rotate(18deg);
-}
-.progress2-circle.p6 .value-bar {
-  transform: rotate(22deg);
-}
-.progress2-circle.p7 .value-bar {
-  transform: rotate(25deg);
-}
-.progress2-circle.p8 .value-bar {
-  transform: rotate(29deg);
-}
-.progress2-circle.p9 .value-bar {
-  transform: rotate(32deg);
-}
-.progress2-circle.p10 .value-bar {
-  transform: rotate(36deg);
-}
-.progress2-circle.p11 .value-bar {
-  transform: rotate(40deg);
-}
-.progress2-circle.p12 .value-bar {
-  transform: rotate(43deg);
-}
-.progress2-circle.p13 .value-bar {
-  transform: rotate(47deg);
-}
-.progress2-circle.p14 .value-bar {
-  transform: rotate(50deg);
-}
-.progress2-circle.p15 .value-bar {
-  transform: rotate(54deg);
-}
-.progress2-circle.p16 .value-bar {
-  transform: rotate(58deg);
-}
-.progress2-circle.p17 .value-bar {
-  transform: rotate(61deg);
-}
-.progress2-circle.p18 .value-bar {
-  transform: rotate(65deg);
-}
-.progress2-circle.p19 .value-bar {
-  transform: rotate(68deg);
-}
-.progress2-circle.p20 .value-bar {
-  transform: rotate(72deg);
-}
-.progress2-circle.p21 .value-bar {
-  transform: rotate(76deg);
-}
-.progress2-circle.p22 .value-bar {
-  transform: rotate(79deg);
-}
-.progress2-circle.p23 .value-bar {
-  transform: rotate(83deg);
-}
-.progress2-circle.p24 .value-bar {
-  transform: rotate(86deg);
-}
-.progress2-circle.p25 .value-bar {
-  transform: rotate(90deg);
-}
-.progress2-circle.p26 .value-bar {
-  transform: rotate(94deg);
-}
-.progress2-circle.p27 .value-bar {
-  transform: rotate(97deg);
-}
-.progress2-circle.p28 .value-bar {
-  transform: rotate(101deg);
-}
-.progress2-circle.p29 .value-bar {
-  transform: rotate(104deg);
-}
-.progress2-circle.p30 .value-bar {
-  transform: rotate(108deg);
-}
-.progress2-circle.p31 .value-bar {
-  transform: rotate(112deg);
-}
-.progress2-circle.p32 .value-bar {
-  transform: rotate(115deg);
-}
-.progress2-circle.p33 .value-bar {
-  transform: rotate(119deg);
-}
-.progress2-circle.p34 .value-bar {
-  transform: rotate(122deg);
-}
-.progress2-circle.p35 .value-bar {
-  transform: rotate(126deg);
-}
-.progress2-circle.p36 .value-bar {
-  transform: rotate(130deg);
-}
-.progress2-circle.p37 .value-bar {
-  transform: rotate(133deg);
-}
-.progress2-circle.p38 .value-bar {
-  transform: rotate(137deg);
-}
-.progress2-circle.p39 .value-bar {
-  transform: rotate(140deg);
-}
-.progress2-circle.p40 .value-bar {
-  transform: rotate(144deg);
-}
-.progress2-circle.p41 .value-bar {
-  transform: rotate(148deg);
-}
-.progress2-circle.p42 .value-bar {
-  transform: rotate(151deg);
-}
-.progress2-circle.p43 .value-bar {
-  transform: rotate(155deg);
-}
-.progress2-circle.p44 .value-bar {
-  transform: rotate(158deg);
-}
-.progress2-circle.p45 .value-bar {
-  transform: rotate(162deg);
-}
-.progress2-circle.p46 .value-bar {
-  transform: rotate(166deg);
-}
-.progress2-circle.p47 .value-bar {
-  transform: rotate(169deg);
-}
-.progress2-circle.p48 .value-bar {
-  transform: rotate(173deg);
-}
-.progress2-circle.p49 .value-bar {
-  transform: rotate(176deg);
-}
-.progress2-circle.p50 .value-bar {
-  transform: rotate(180deg);
-}
-.progress2-circle.p51 .value-bar {
-  transform: rotate(184deg);
-}
-.progress2-circle.p52 .value-bar {
-  transform: rotate(187deg);
-}
-.progress2-circle.p53 .value-bar {
-  transform: rotate(191deg);
-}
-.progress2-circle.p54 .value-bar {
-  transform: rotate(194deg);
-}
-.progress2-circle.p55 .value-bar {
-  transform: rotate(198deg);
-}
-.progress2-circle.p56 .value-bar {
-  transform: rotate(202deg);
-}
-.progress2-circle.p57 .value-bar {
-  transform: rotate(205deg);
-}
-.progress2-circle.p58 .value-bar {
-  transform: rotate(209deg);
-}
-.progress2-circle.p59 .value-bar {
-  transform: rotate(212deg);
-}
-.progress2-circle.p60 .value-bar {
-  transform: rotate(216deg);
-}
-.progress2-circle.p61 .value-bar {
-  transform: rotate(220deg);
-}
-.progress2-circle.p62 .value-bar {
-  transform: rotate(223deg);
-}
-.progress2-circle.p63 .value-bar {
-  transform: rotate(227deg);
-}
-.progress2-circle.p64 .value-bar {
-  transform: rotate(230deg);
-}
-.progress2-circle.p65 .value-bar {
-  transform: rotate(234deg);
-}
-.progress2-circle.p66 .value-bar {
-  transform: rotate(238deg);
-}
-.progress2-circle.p67 .value-bar {
-  transform: rotate(241deg);
-}
-.progress2-circle.p68 .value-bar {
-  transform: rotate(245deg);
-}
-.progress2-circle.p69 .value-bar {
-  transform: rotate(248deg);
-}
-.progress2-circle.p70 .value-bar {
-  transform: rotate(252deg);
-}
-.progress2-circle.p71 .value-bar {
-  transform: rotate(256deg);
-}
-.progress2-circle.p72 .value-bar {
-  transform: rotate(259deg);
-}
-.progress2-circle.p73 .value-bar {
-  transform: rotate(263deg);
-}
-.progress2-circle.p74 .value-bar {
-  transform: rotate(266deg);
-}
-.progress2-circle.p75 .value-bar {
-  transform: rotate(270deg);
-}
-.progress2-circle.p76 .value-bar {
-  transform: rotate(274deg);
-}
-.progress2-circle.p77 .value-bar {
-  transform: rotate(277deg);
-}
-.progress2-circle.p78 .value-bar {
-  transform: rotate(281deg);
-}
-.progress2-circle.p79 .value-bar {
-  transform: rotate(284deg);
-}
-.progress2-circle.p80 .value-bar {
-  transform: rotate(288deg);
-}
-.progress2-circle.p81 .value-bar {
-  transform: rotate(292deg);
-}
-.progress2-circle.p82 .value-bar {
-  transform: rotate(295deg);
-}
-.progress2-circle.p83 .value-bar {
-  transform: rotate(299deg);
-}
-.progress2-circle.p84 .value-bar {
-  transform: rotate(302deg);
-}
-.progress2-circle.p85 .value-bar {
-  transform: rotate(306deg);
-}
-.progress2-circle.p86 .value-bar {
-  transform: rotate(310deg);
-}
-.progress2-circle.p87 .value-bar {
-  transform: rotate(313deg);
-}
-.progress2-circle.p88 .value-bar {
-  transform: rotate(317deg);
-}
-.progress2-circle.p89 .value-bar {
-  transform: rotate(320deg);
-}
-.progress2-circle.p90 .value-bar {
-  transform: rotate(324deg);
-}
-.progress2-circle.p91 .value-bar {
-  transform: rotate(328deg);
-}
-.progress2-circle.p92 .value-bar {
-  transform: rotate(331deg);
-}
-.progress2-circle.p93 .value-bar {
-  transform: rotate(335deg);
-}
-.progress2-circle.p94 .value-bar {
-  transform: rotate(338deg);
-}
-.progress2-circle.p95 .value-bar {
-  transform: rotate(342deg);
-}
-.progress2-circle.p96 .value-bar {
-  transform: rotate(346deg);
-}
-.progress2-circle.p97 .value-bar {
-  transform: rotate(349deg);
-}
-.progress2-circle.p98 .value-bar {
-  transform: rotate(353deg);
-}
-.progress2-circle.p99 .value-bar {
-  transform: rotate(356deg);
-}
-.progress2-circle.p100 .value-bar {
-  transform: rotate(360deg);
-}
+
 
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
 }
-.main-progress2-cbar {
-  display: inline;
-  float: left;
+.progress_bar_img{
+  width: 80%;
+  padding: 10px;
 }
-.main-progress2-cbar .progress2-circle span:not(.text) {
-  color: transparent;
-  line-height: 7.7em;
-  width: 7.7em;
-}
-.main-progress2-cbar .progress2-circle {
-  background-color: #ebebeb;
-}
-.main-progress2-cbar .value-bar {
-  border: 0.2em solid #ce1b3c;
-}
-
-.main-progress2-cbar .progress2-circle {
-  width: 7.7em;
-  height: 7.7em;
-}
-.main-progress2-cbar .progress2-circle:after {
-  width: 7.3em;
-  height: 7.3em;
-  background-color: #fff;
-  top: 0.2em;
-  left: 0.2em;
-}
-.main-progress2-cbar .left-half-clipper {
-  width: 7.7em;
-  height: 7.7em;
-  clip: rect(0, 7.7em, 7.7em, 3.85em);
-}
-.main-progress2-cbar .value-bar {
-  width: 7.7em;
-  height: 7.7em;
-  clip: rect(0, 3.85em, 7.7em, 0);
-}
-.main-progress2-cbar .text {
-  font-size: 56px;
-  font-weight: 100;
-  color: #ce1b3c;
-  display: inline;
-  width: auto;
-  height: 44px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  line-height: 2.75;
-}
-/* progress2 bar filling the whole right half for values above 50% */
-.main-progress2-cbar .progress2-circle.over50 .first50-bar {
-  /*Progress bar for the first 50%, filling the whole right half*/
-  position: absolute; /*needed for clipping*/
-  clip: rect(0em, 7.7em, 7.7em, 3.85em);
-  background-color: #ce1b3c;
-  border-radius: 50%;
-  width: 7.7em;
-  height: 7.7em;
-}
-
 /* Profile*/
 
 .container-right .container {
@@ -642,7 +368,9 @@ body {
   grid-gap: 2em;
 }
 .container-right .container .ligne {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
+  margin-top:10px
 }
 .container-right .container .div {
   display: grid;

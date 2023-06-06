@@ -1,0 +1,168 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 5% 0 0 5%;
+  }
+  
+  .title2 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .title22 {
+    display: flex;
+    flex-direction: row;
+    color: #717171;
+  }
+  
+  .title2 b {
+    font-size: 32px;
+    margin-right: 5px;
+  }
+  
+  .right {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 70%;
+  }
+  
+  .right_1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .right_2 {
+    margin-top: -15%;
+    font-size: 24px;
+  }
+  
+  .right .title {
+    font-size: 26px;
+    margin: 2% 5% 0 0;
+  }
+  
+  .right .button {
+    background: #262e2e;
+    border-radius: 10px;
+    width: 20%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .right img {
+    margin-right: 4%;
+    width: 25px;
+  }
+  
+  .left {
+    width: 100%;
+  }
+  
+  .reunion_comp {
+    width: 500px;
+    height: 69px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 6% 0 0 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .reunion_comp2 {
+    margin-left: 5%;
+    font-size: 12px;
+  }
+  
+  .dot1 {
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    background: #5a7cf4;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .dot2 {
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    background: #e7a633;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .dot3 {
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    background: #e06974;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .reunion_comp3 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+  }
+  
+  .reunion_comp3 img {
+    width: 30px;
+  }
+  
+  .left-container {
+    width: 349px;
+    height: 650px;
+    left: 1078px;
+    top: 255px;
+    background-color: #BE1B39;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .left_content{
+      padding: 15%;
+  }
+  
+  .left_content h2{
+      font-size: 28px;
+  }
+  
+  .left_content_2 img{
+      width: 15px;
+      margin-right: 5px;
+  }
+  
+  .left_content_3 img{
+      width: 20px;
+      margin: 8px 5px 0 0;
+  }
+  
+  .left_3_img{
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+  }
+  
+  .left_3_img div{
+      font-size: 10px;
+  }
+  
+  .left_content_4 img{
+      margin-right: 10px;
+  }

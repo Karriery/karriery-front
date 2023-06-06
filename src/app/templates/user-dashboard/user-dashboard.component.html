@@ -22,51 +22,50 @@
         <div class="right">
           <div class="main-progress2-cbar">
             <h4><img src="./assets/progress.png" />Profil complet</h4>
-            <div class="progress2-circle p37">
-              <span>37%</span>
-              <span class="text">37</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
-              </div>
-            </div>
+            <img src="./../../../assets/profile_completed.png">
           </div>
         </div>
       </div>
 
       <div class="steps">
-        <ul class="progressbar">
-          <li class="active">Step 1</li>
-          <li>Step 2</li>
-          <li>Step 3</li>
-        </ul>
+        <h1>CV en cours d'amélioration</h1>
+       <img class="progress_bar_img" src="./../../../assets/progress_bar.png">
+        <button class="progress_button" >Telecharger votre CV</button>
       </div>
     </div>
 
-    <div>ggggggg</div>
+    
   </div>
   <div class="container-right">
-    <div class="container" *ngFor="let e of list">
-      <img ngClass="img" src="{{ e.img }}" />
-      <h1 ngClass="title">{{ e.prenom }} {{ e.nom }}</h1>
+    <div class="container" id="height">
+      <h1 class="title_card">Mon Profile</h1>
+      <img ngClass="img" src="{{ user.photo }}" />
+      <h1 ngClass="title">{{ user.lastname }}</h1>
+      <div class="title_card">Compte vérifier</div>
+      <div ngClass="buttonsCard">
+        <button ngClass="button_pen"><img src="./../../../assets/pen.png"></button>
+        <button ngClass="button_card">Voir le profil complet</button></div>
       <hr ngClass="ligne" />
+      <h2>Mes dernières transactions:</h2>
+      <div ngClass="HistoriquePack" >
+        <div>
+          <div>
+            <h3>Growth Pack</h3>
+            <button class="img_button">Voir Détais</button>
+          </div>
+          
+        </div>
+        <div>
+          <div>
+            <div>29/03/2023</div>
+            <br>
+          </div>
+          
+        </div>
+      </div>
       <div class="info">
-        <div ngClass="div">
-          <div>Nom:</div>
-          <div>{{ e.nom }}</div>
-          <div ngClass="Modifier">Modifier</div>
-        </div>
-        <div ngClass="div">
-          <div>Prénom:</div>
-          <div>{{ e.prenom }}</div>
-          <div ngClass="Modifier">Modifier</div>
-        </div>
-        <div ngClass="div">
-          <div>Email:</div>
-          <div>{{ e.email }}</div>
-
-          <div ngClass="Modifier">Modifier</div>
-        </div>
+       
+       
       </div>
     </div>
   </div>
