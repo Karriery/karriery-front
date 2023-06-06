@@ -70,6 +70,15 @@ import { CoachProfiListeFeedbacksComponent } from './templates/coach-profi-liste
 import { CoachProfiListeCvComponent } from './templates/coach-profi-liste-cv/coach-profi-liste-cv.component';
 import { CoachProfiAjouterCandidatsComponent } from './templates/coach-profi-ajouter-candidats/coach-profi-ajouter-candidats.component';
 import { CoachProfiOptimisationsCVComponent } from './templates/coach-profi-optimisations-cv/coach-profi-optimisations-cv.component';
+import { AdminProfilComponent } from './pages/admin-profil/admin-profil.component';
+import { AdminDashbordComponent } from './templates/admin-dashbord/admin-dashbord.component';
+import { AdminInfoPerComponent } from './templates/admin-info-per/admin-info-per.component';
+import { AdminListeComponent } from './templates/admin-liste/admin-liste.component';
+import { CreateCoachComponent } from './pages/create-coach/create-coach.component';
+import { CreateCoachCareeInformationComponent } from './templates/create-coach-caree-information/create-coach-caree-information.component';
+import { CreateCoachSuccessComponent } from './templates/create-coach-success/create-coach-success.component';
+import { CreateCoachVerifComponent } from './templates/create-coach-verif/create-coach-verif.component';
+import { CreateCoachPersonalInformationComponent } from './templates/create-coach-personal-information/create-coach-personal-information.component';
 
 @NgModule({
   declarations: [
@@ -129,6 +138,15 @@ import { CoachProfiOptimisationsCVComponent } from './templates/coach-profi-opti
     CoachProfiListeCvComponent,
     CoachProfiAjouterCandidatsComponent,
     CoachProfiOptimisationsCVComponent,
+    AdminProfilComponent,
+    AdminDashbordComponent,
+    AdminInfoPerComponent,
+    AdminListeComponent,
+    CreateCoachComponent,
+    CreateCoachCareeInformationComponent,
+    CreateCoachSuccessComponent,
+    CreateCoachVerifComponent,
+    CreateCoachPersonalInformationComponent,
   ],
   imports: [
     BrowserModule,
