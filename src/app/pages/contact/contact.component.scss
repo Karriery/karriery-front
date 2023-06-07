@@ -1,14 +1,13 @@
 .container {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
   }
   .left-box{
     width: 9%;
     min-height: 100vh;
-    background-color: WH;
     position: absolute;
-    border-right: 1px solid #d53647;
   }
+  
   .left-box .logo{
     position: absolute;
     top: 2%;
@@ -21,7 +20,7 @@
   }
   
   .red-box {
-    width: 250px;
+    width: 450px;
     min-height: 100vh;
     background-color: #d53647;
     position: absolute;
@@ -30,16 +29,17 @@
     z-index: 1;
   }
   .content {
-    height: 100px;
+    height: 20px;
     
   }
   .content h1{
-    font-size: 45px;
+    font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     margin-left: 0.8px;
+    font-weight: 900;
   }
   .content p{
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 0.8px;
     margin-top: 5px;
     margin-bottom: 100px;
@@ -52,7 +52,7 @@
     letter-spacing: 1.5px;
   }
   .inputs-container{
-    min-height: 100vh;
+    min-height: 120vh;
     display: grid;
     justify-content: flex-start;
     align-items: center;
@@ -64,8 +64,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: self-start;
-  
+    width: 20%;
     margin-left: 1px;
+    width: 10%;
   }
   
   input{
@@ -76,7 +77,7 @@
     border-bottom: 1px solid rgb(128, 127, 127);
     outline: none;
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -85,7 +86,7 @@
   }
   ::placeholder{
     color: black;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 450;   
     opacity: 100%;
   }
@@ -125,7 +126,7 @@
     position: absolute;
     top: 20%;
     right: 0;
-    width: 485px;
+    width: 400px;
     min-height: 400px;
     background-color: #3a4040;
     z-index: 2;
