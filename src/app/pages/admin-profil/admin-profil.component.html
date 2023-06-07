@@ -1,6 +1,54 @@
 <div ngClass="page">
-    <div ngClass="menu">menu</div>
-    <div ngClass="container_page">
-        <router-outlet></router-outlet>
+  <div ngClass="menu">
+    <div class="sidebar">
+      <div class="shead">
+        <img
+          src="../../../assets/logo_white.png"
+          style="
+            width: 120px;
+            align-self: center;
+            justify-self: center;
+            padding-left: 40px;
+          "
+          alt=""
+        />
+      </div>
+      <div class="sbody">
+        <div class="nav-item">
+          <mat-icon>dashboard</mat-icon>
+          <a href="">Tableau de board </a>
+        </div>
+        <div class="nav-item">
+          <mat-icon>person</mat-icon>
+
+          <a href="">Utilisateurs </a>
+        </div>
+        <div class="nav-item">
+          <mat-icon>folder</mat-icon>
+          <a href="">Coaches </a>
+        </div>
+        <div class="nav-item">
+          <mat-icon>device_hub</mat-icon>
+          <a href="">Packs </a>
+        </div>
+        <div class="nav-item">
+          <mat-icon>chat </mat-icon>
+          <a href="">Chat</a>
+        </div>
+        <div class="nav-item">
+          <mat-icon>settings</mat-icon>
+          <a href="">Paramètres </a>
+        </div>
+      </div>
+      <div class="sfooter">
+        <div class="nav-item">
+          <mat-icon>exit_to_app</mat-icon>
+          <a href="">Déconnexion </a>
+        </div>
+      </div>
     </div>
+  </div>
+  <div ngClass="container_page">
+    <router-outlet></router-outlet>
+  </div>
 </div>

@@ -23,7 +23,8 @@ export class CreateUserCareeInformationComponent {
   }
   update(data : any ){
     this.auth.updateUser(data , this.user._id).subscribe((data)=>{
-       this.router.navigateByUrl("/createUser/Caree")
+      console.log(data)
+       this.router.navigateByUrl("/createUser/ConfirmationPack")
     })
   }
 }

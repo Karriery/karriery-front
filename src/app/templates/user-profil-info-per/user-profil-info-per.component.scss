@@ -4,6 +4,8 @@
   margin: 0 auto;
   border-radius: 10px;
   display: grid;
+  grid-template-columns: 180px 1fr ;
+  align-items: end;
   color: white;
   font-family: "Montserrat", sans-serif;
   margin-top: 10px;
@@ -17,9 +19,21 @@
     #cd1b3d,
     #e61a41
   );
+  h1 {
+font-style: normal;
+font-size: 32px;
+line-height: 39px;
+margin-bottom: 40px;
+color: #FFFFFF;
+
+  }
 }
 .container_photo {
   margin-top: 100px;
+  img {
+    width: 140px;
+    border-radius: 7px;
+  }
 }
 .img_button {
   font-family: "Montserrat", sans-serif;
