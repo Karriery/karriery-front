@@ -40,12 +40,15 @@ import { CreateCoachCareeInformationComponent } from './templates/create-coach-c
 import { CreateCoachSuccessComponent } from './templates/create-coach-success/create-coach-success.component';
 import { CreateCoachVerifComponent } from './templates/create-coach-verif/create-coach-verif.component';
 import { CreateCoachPersonalInformationComponent } from './templates/create-coach-personal-information/create-coach-personal-information.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "readme", component: ReadMeComponent },
   { path: "form", component: FormComponent },
   { path: "payment", component: PaymentComponent },
+  { path: "contact", component: ContactComponent },
+
   {
     path: "userProfil",
     component: UserProfilComponent,
