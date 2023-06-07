@@ -25,5 +25,6 @@ export class CreateUserPersonalInformationComponent {
     this.auth.updateUser(data , this.user._id).subscribe((data)=>{
        this.router.navigateByUrl("/createUser/Caree")
     })
+    this.router.navigateByUrl("/createUser/Caree")
   }
 }

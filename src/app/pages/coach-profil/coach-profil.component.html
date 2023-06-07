@@ -1,30 +1,49 @@
 <div>
-    <div class="navbar">
-      <h2 class="username">Bonjour,<span class="span_navbar">M.Ahmed</span></h2>
-      <button class="button_navbar">Consulter mon tableau de bord</button>
-      <img class="icon_navbar1" src="./assets/profile-user.png" />
-    </div>
+  <div class="navbar">
+    <h2 class="username">Bonjour,<span class="span_navbar">M.Ahmed</span></h2>
+    <button class="button_navbar">Consulter mon tableau de bord</button>
+    <img class="icon_navbar1" src="./assets/profile-user.png" />
   </div>
-  
-  <div ngClass="container_profile">
-    <div class="tableau_de_bord">
-      <div class="menu">
-        <img class="logo" src="./assets/karriery.png" />
-        <div class="red">
-          <img class="icons" id="icon" src="./assets/caree.png" />
+</div>
+
+<div ngClass="container_profile">
+  <div class="tableau_de_bord">
+    <div class="menu">
+
+      <img class="logo" src="./assets/karriery.png" />
+      <div class="red">
+        <div [className]="
+        " (click)="move('/ProfilCoach/CoachDashbord')">
+        <img class="icons" id="icon" src="./assets/caree.png" />
         </div>
-        <img class="icons" src="./assets/profileMenu.png" />
-        <img class="icons" src="./assets/calendar-menu.png" />
-        <img class="icons" src="./assets/three.png" />
-        <hr class="hr" />
-        <img class="icons" src="./assets/chat.png" />
-        <img class="icons" src="./assets/video.png" />
-        <img class="icons" src="./assets/deconnexion.png" />
       </div>
-    </div>
-  
-    <div class="container-page">
-      <router-outlet></router-outlet>
+      <div [className]="
+        " (click)="move('/ProfilCoach/infoPerso')">
+        <img class="icons" src="./assets/profileMenu.png" />
+
+      </div>
+      <div [className]="
+    " (click)="move('/ProfilCoach/reunion')">
+        <img class="icons" src="./assets/calendar-menu.png" />
+      </div>
+      <div [className]="
+        " (click)="move('/ProfilCoach/transactions')">
+        <img class="icons" src="./assets/three.png" />
+      </div>
+      <hr class="hr" />
+      <div [className]="
+        " (click)="move('/ProfilCoach/userDashbord')">
+        <img class="icons" src="./assets/chat.png" />
+      </div>
+      <div [className]="
+        " (click)="move('/ProfilCoach/userDashbord')">
+        <img class="icons" src="./assets/video.png" />
+      </div>
+      <img (click)="disconnect()" class="icons" src="./assets/deconnexion.png" />
     </div>
   </div>
-  
+
+  <div class="container-page">
+    <router-outlet></router-outlet>
+  </div>
+</div>

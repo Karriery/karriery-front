@@ -1,1 +1,46 @@
-<p>coach-profil-info-per works!</p>
+<div class="top">
+    <div class="container_photo">
+      <img [src]="user.photo" alt="" />
+    </div>
+    <div>
+      <h1>{{ user.firsname }} {{ user.lastname }}</h1>
+    </div>
+  </div>
+  
+  <div class="container">
+    <h4 class="text-right">Vos données personnelles</h4>
+    <hr class="ligne" />
+    <div class="container_text">
+      <div>
+        <div class="sous-div">Nom:</div>
+        <div class="sous-div">Email:</div>
+        <div class="sous-div">Télephone</div>
+        <div class="sous-div">Adresse</div>
+        <div class="sous-div">Ville</div>
+        <div class="sous-div">Code Postal</div>
+        <div class="sous-div">Education</div>
+        <div class="sous-div">Travaille</div>
+        <div class="sous-div">Pays</div>
+        <div class="sous-div">à Propos</div>
+      </div>
+      <div>
+        <div>{{ user.lastname }}</div>
+        <div>{{ user.email }}</div>
+        <div>99 287 568</div>
+        <div>{{ user.address }}</div>
+        <div>tunis</div>
+        <div>2000</div>
+        <div>3ème année licence en communication multimédia</div>
+        <div>Dentiste</div>
+        <div>{{ user.city }}</div>
+        <div>
+          Je m'appelle {{ user.lastname }} et je suis passionné par l'écriture
+          depuis que je suis enfant...
+        </div>
+      </div>
+      <div>
+        <div ngClass="Modifier">Modifier</div>
+      </div>
+    </div>
+  </div>
+  

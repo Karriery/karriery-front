@@ -35,6 +35,8 @@ export class AuthService {
 
 
   updateUser(data : any , id : any): Observable<any> {
-    return this.http.put("http://localhost:3636/user/" + id, data , httpOptions);
+    const headers = { 'Authorization': 'Bearer ' + localStorage.getItem('token') }
+    //@ts-ignore
+    return this.http.put("http://localhost:3636/user/" + id, data , headers);
   }
 }
