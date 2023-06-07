@@ -35,6 +35,7 @@ export class DialogComponent {
       console.log(data)
          if(data.token) {
            localStorage.setItem("token" , data.token)
+           localStorage.setItem("user" , JSON.stringify(data.user))
           this.router.navigateByUrl("/userProfil/userDashbord")
           this.dialogRef.close();
          } else {

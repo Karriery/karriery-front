@@ -23,6 +23,9 @@ import {
   ],
 })
 export class NavbarComponent implements OnInit {
+
+  loggedin = false;
+  username = ""
   ////////////////////////////////////////////////////////////////////////////////////
   constructor(private router: Router, public dialog: MatDialog) {}
   login() {
@@ -33,9 +36,20 @@ export class NavbarComponent implements OnInit {
   ////////////////////////////////////////////////////////////////////////////////////
   i: number = 0;
   dispaly: boolean = true;
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loggedin = localStorage.getItem('token') != null
+    if ( localStorage.getItem('user') != null ) {
+      const user = JSON.parse(localStorage.getItem('user') || '')
+      this.username = user.lastname;
+    }
+  }
   move(to: any) {
     this.router.navigateByUrl(to);
+  }
+  logout() {
+    localStorage.removeItem('token')
+    localStorage.removeItem('user')
+    window.location.reload();
   }
   toggle() {
     const nav = document.getElementsByClassName("divbar")[0] as
