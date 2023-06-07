@@ -27,7 +27,9 @@ div .navbar {
   text-align: center;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr  1fr;
+  align-items: center;
+  justify-items: center;
   margin-left: 20%;
 }
 
@@ -50,14 +52,12 @@ div .navbar {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 12px;
+  border-radius: 7px;
   font-size: 14px;
   margin: 2% 1%;
-  width: 60%;
   height: auto;
   cursor: pointer;
-  box-shadow: -0.09rem 0 0.9rem #8e8e8e;
-}
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
 .icon_navbar1 {
   display: inline-block;
 }
@@ -96,13 +96,39 @@ div .navbar {
   text-align: center;
   margin-top: -40%;
 }
+
+.notActiv {
+  color: #ce1b3c;
+  cursor: pointer;
+  mat-icon {
+    font-size: 25px  !important;
+  }
+}
+.notActiv:hover {
+  background-color: #ce1b3c;
+  border-radius: 0 1em 1em 0;
+  width: 120%;
+  display: grid;
+  place-items: center;
+  color: white;
+  mat-icon {
+    font-size: 25px  !important;
+  }
+}
+
 .red {
   background-color: #ce1b3c;
   border-radius: 0 1em 1em 0;
   width: 120%;
   display: grid;
   place-items: center;
+  color: white;
+  mat-icon {
+    font-size: 25px  !important;
+  }
 }
+
+
 .logo {
   margin: 0 auto;
   margin-top: 20px;

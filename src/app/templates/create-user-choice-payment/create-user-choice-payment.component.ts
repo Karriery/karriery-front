@@ -15,7 +15,6 @@ export class CreateUserChoicePaymentComponent {
   ngOnInit(){
     this.route.queryParams.subscribe((queryParams: any) => {
     this.packs.getById(queryParams.id).subscribe((data : any)=>{
-      console.log(data)
       this.pack = data
     })
      })
@@ -37,7 +36,7 @@ export class CreateUserChoicePaymentComponent {
       field: this.user.field,
     }
     this.rs.createReservation(obj).subscribe((data)=>{
-      this.router.navigateByUrl("/createUser/PaymentCash")
+        this.router.navigateByUrl("/createUser/PaymentCash")
     })
   }
   payOnline() {

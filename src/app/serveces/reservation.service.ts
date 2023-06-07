@@ -5,12 +5,12 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
   providedIn: 'root'
 })
 export class ReservationService {
-  ROOT_URL = "https://dev.karriery.com/reservation/";
+  ROOT_URL = "http://localhost:3636/reservation/";
 
   constructor(private http: HttpClient) { }
   createReservation(data : any) {
     console.log("dzadzazddza" , data)
-    return this.http.post(this.ROOT_URL + "nonuserreservation" , data);
+    return this.http.post(this.ROOT_URL + "create" , data);
   }
   getReservationById(reservationid: string) {
     return this.http.get(this.ROOT_URL + "findone/" + reservationid);
@@ -20,7 +20,7 @@ export class ReservationService {
   }
   uploadImg(img: any) {
     return this.http.post(
-      "https://dev.karriery.com/api/upload",
+      "http://localhost:3636/api/upload",
       img
     );
   }
@@ -32,11 +32,11 @@ export class ReservationService {
   }
   konnect(id : any, reservation : any) {
     return this.http.post(
-      "https://dev.karriery.com/api/konnect/" + id,
+      "http://localhost:3636/api/konnect/" + id,
       reservation
     );
   }
   location() {
-    return this.http.get("https://dev.karriery.com/localisation/");
+    return this.http.get("http://localhost:3636/localisation/");
   }
 }

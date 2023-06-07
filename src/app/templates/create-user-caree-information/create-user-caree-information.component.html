@@ -1,4 +1,4 @@
-<div ngClass="container">
+<div ngClass="container" style="margin-top: 50px">
   <div ngClass="container_Top">
     <app-card-profil-red></app-card-profil-red>
   </div>
@@ -6,9 +6,7 @@
     <app-create-user-card-user1></app-create-user-card-user1>
     <div ngClass="container_form">
       <div ngClass="container_left">
-        <div>
-          <h1 ngClass="title1">Information personnel</h1>
-        </div>
+        <h1 ngClass="title1">Information personnel</h1>
         <div>Votre niveau d'études :</div>
         <input ngClass="input" #education />
         <div ngClass="margin_top">Veuillez entrer votre diplome :</div>
@@ -22,12 +20,12 @@
       </div>
 
       <div ngClass="container_right">
-        <h1 ngClass="title2">Information carrière</h1>
-        <hr ngClass="lign" />
+        <h1 ngClass="title1">Information carrière</h1>
         <div ngClass="padding_bottom">Poste recherché :</div>
         <input ngClass="input" id="input" #field />
         <div ngClass="margin_top">Entrez votre à propos ici</div>
         <input ngClass="input" id="input2" />
+        <br />
         <button
           ngClass="button"
           (click)="
@@ -38,7 +36,6 @@
             })
           "
         >
-
           Suivant
         </button>
       </div>

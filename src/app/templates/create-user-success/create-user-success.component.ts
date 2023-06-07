@@ -5,4 +5,11 @@ import { Router } from "@angular/router";
   templateUrl: "./create-user-success.component.html",
   styleUrls: ["./create-user-success.component.scss"],
 })
-export class CreateUserSuccessComponent {}
+export class CreateUserSuccessComponent {
+  constructor(private router : Router){
+
+  }
+  move(){
+    this.router.navigateByUrl("/userProfil/userDashbord")
+  }
+}

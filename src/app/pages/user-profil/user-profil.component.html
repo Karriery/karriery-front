@@ -1,7 +1,11 @@
 <div>
   <div class="navbar">
-    <h2 class="username">Bonjour,<span class="span_navbar">M.Ahmed</span></h2>
-    <button class="button_navbar">Consulter mon tableau de bord</button>
+    <h2 class="username">
+      Bonjour,<span class="span_navbar"
+        >{{ user.firsname }} {{ user.lastname }}</span
+      >
+    </h2>
+    <button class="button_navbar">Discutez avec votre COACH</button>
     <img
       class="icon_navbar1"
       [src]="user.photo"
@@ -14,16 +18,55 @@
   <div class="tableau_de_bord">
     <div class="menu">
       <img class="logo" src="./assets/karriery.png" />
-      <div class="red">
-        <img class="icons" id="icon" src="./assets/caree.png" />
+      <div
+        [className]="
+          path === '/userProfil/userDashbord' ? 'notActiv red' : 'notActiv'
+        "
+        (click)="move('/userProfil/userDashbord')"
+      >
+        <mat-icon>dashboard</mat-icon>
       </div>
-      <img class="icons" src="./assets/profileMenu.png" />
-      <img class="icons" src="./assets/calendar-menu.png" />
-      <img class="icons" src="./assets/three.png" />
+      <div
+        [className]="
+          path === '/userProfil/infoPerso' ? 'notActiv red' : 'notActiv'
+        "
+        (click)="move('/userProfil/infoPerso')"
+      >
+        <mat-icon>person</mat-icon>
+      </div>
+
+      <div
+        [className]="
+          path === '/userProfil/Reunion' ? 'notActiv red' : 'notActiv'
+        "
+        (click)="move('/userProfil/Reunion')"
+      >
+        <mat-icon>calendar_today</mat-icon>
+      </div>
+      <div
+        [className]="
+          path === '/userProfil/commandes' ? 'notActiv red' : 'notActiv'
+        "
+        (click)="move('/userProfil/commandes')"
+      >
+        <mat-icon>crop_landscape</mat-icon>
+      </div>
+
       <hr class="hr" />
-      <img class="icons" src="./assets/chat.png" />
-      <img class="icons" src="./assets/video.png" />
-      <img class="icons" src="./assets/deconnexion.png" />
+      <div
+        [className]="
+          path === '/userProfil/userFeedBack' ? 'notActiv red' : 'notActiv'
+        "
+        (click)="move('/userProfil/userFeedBack')"
+      >
+        <mat-icon> chat</mat-icon>
+      </div>
+      <div class="notActiv">
+        <mat-icon>voice_chat</mat-icon>
+      </div>
+      <div class="notActiv" (click)="disconnect()">
+        <mat-icon>exit_to_app</mat-icon>
+      </div>
     </div>
   </div>
 

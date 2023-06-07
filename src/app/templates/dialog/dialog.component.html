@@ -1,19 +1,34 @@
 <div *ngIf="entryData.use === 'login'" ngClass="container">
-  <h1>Se connecter</h1>
-  <div ngClass="input_icon">
-    <mat-icon> mail_outline</mat-icon
-    ><input class="input-form" type="text" #email />
+  <div class="header"><h1>Se connecter</h1></div>
+  <div ngClass="form-input">
+    <div class="label-input">
+      <mat-icon> mail_outline</mat-icon>
+      <label for="password">Email</label>
+    </div>
+    <input
+      class="input-form"
+      placeholder="Email@example.com"
+      type="text"
+      #email
+    />
   </div>
-  <div ngClass="input_icon" style="margin-bottom: 20px">
-    <mat-icon>https</mat-icon>
-    <input type="password" class="input-form" #password />
+  <div ngClass="form-input">
+    <div class="label-input">
+      <mat-icon>https</mat-icon> <label for="password">password</label>
+    </div>
+    <input
+      type="password"
+      placeholder="Password ...."
+      class="input-form"
+      #password
+    />
   </div>
   <button ngClass="button" (click)="login(email.value, password.value)">
     Connexion
   </button>
-  <h4 (click)="gotosignup()">Créer un compte</h4>
+  <h4 (click)="gotosignup()" style="cursor: pointer">Créer un compte</h4>
 </div>
-<div *ngIf="entryData.use === 'signup'" ngClass="container">
+<!-- <div *ngIf="entryData.use === 'signup'" ngClass="container">
   <h1>Créer un compte</h1>
   <div ngClass="input_icon">
     <mat-icon>https</mat-icon>
@@ -33,4 +48,53 @@
     Inscription
   </button>
   <h4>vous étes déja inscrit?<span (click)="gotologin()">login</span></h4>
+</div> -->
+
+<div *ngIf="entryData.use === 'signup'" ngClass="container">
+  <div class="header"><h1>Se connecter</h1></div>
+  <div ngClass="form-input">
+    <div class="label-input">
+      <mat-icon> mail_outline</mat-icon>
+      <label for="password">Email</label>
+    </div>
+    <input
+      class="input-form"
+      placeholder="Email@example.com"
+      type="text"
+      #emails
+    />
+  </div>
+  <div ngClass="form-input">
+    <div class="label-input">
+      <mat-icon>https</mat-icon> <label for="password">password</label>
+    </div>
+    <input
+      type="password"
+      placeholder="Password ...."
+      class="input-form"
+      #passwords
+    />
+  </div>
+  <div ngClass="form-input">
+    <div class="label-input">
+      <mat-icon>https</mat-icon> <label for="password">password</label>
+    </div>
+    <input
+      type="password"
+      placeholder="Password ...."
+      class="input-form"
+      #passwords2
+    />
+  </div>
+  <button ngClass="button" (click)="signup(emails.value, passwords.value)">
+    Inscription
+  </button>
+  <h4>
+    vous étes déja inscrit?<span
+      (click)="gotologin()"
+      style="cursor: pointer; color: #e81a41"
+    >
+      login</span
+    >
+  </h4>
 </div>

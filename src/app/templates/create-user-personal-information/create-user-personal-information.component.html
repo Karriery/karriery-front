@@ -1,4 +1,4 @@
-<div ngClass="container">
+<div ngClass="container" style="margin-top: 50px">
   <div ngClass="container_Top">
     <app-card-profil-red></app-card-profil-red>
   </div>
@@ -6,10 +6,7 @@
     <app-create-user-card-user1></app-create-user-card-user1>
     <div ngClass="container_form">
       <div ngClass="container_left">
-        <div>
-          <h1 ngClass="title1">Information personnel</h1>
-          <hr ngClass="lign" />
-        </div>
+        <h1 ngClass="title1">Information personnel</h1>
         <div>Nom:</div>
         <input ngClass="input" placeholder="Nom" #lastname />
         <div>Veuillez enter votre numéro de téléphone :</div>
@@ -29,13 +26,14 @@
       </div>
 
       <div ngClass="container_right">
-        <h1 ngClass="title2">Information carrière</h1>
+        <h1 ngClass="title1">Information carrière</h1>
         <div>Prenom:</div>
         <input ngClass="input" id="input" placeholder="Prenom" #firstname />
         <div>Veuillez télécharger votre CV ci-dessous :</div>
         <input ngClass="input" id="input" />
         <div>Veuillez entrer votre lien du profil LinkedIn ci-dessous :</div>
         <input ngClass="input" id="input2" />
+        <br />
         <button
           ngClass="button"
           (click)="update({firstname : firstname.value ,lastname : lastname.value , phonenumber : phonenumber.value , country : country.value , city : city.value , address : address.value ,   })"
