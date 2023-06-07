@@ -1,0 +1,22 @@
+.container_video{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 50px;
+    h1 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 39px;
+      font-family: "Montserrat", sans-serif;
+      color: #262e2e;
+    }
+}
+
+video{
+  width: 50%;
+  margin: 0 auto;
+}
