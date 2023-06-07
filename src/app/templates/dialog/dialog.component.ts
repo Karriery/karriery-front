@@ -14,8 +14,8 @@ export class DialogComponent {
     public dialogRef: MatDialogRef<DialogComponent>,
     @Inject(MAT_DIALOG_DATA) public entryData: any,
     private router: Router,
-    private auth : AuthService
-  ) {}
+    private auth: AuthService
+  ) { }
   gotosignup() {
     const dialogRef = this.dialog.open(DialogComponent, {
       data: { use: "signup" },
@@ -30,30 +30,33 @@ export class DialogComponent {
   }
 
 
-  login(email : any , password : any){
-     this.auth.login(email , password).subscribe((data : any)=>{
+  login(email: any, password: any) {
+    this.auth.login(email, password).subscribe((data: any) => {
       console.log(data)
-         if(data.token) {
-           localStorage.setItem("token" , data.token)
-           localStorage.setItem("user" , JSON.stringify(data.user))
+      if (data.token) {
+        localStorage.setItem("token", data.token)
+        localStorage.setItem("user", JSON.stringify(data.user))
+        if (email == "halimbb@gmail.com")
+          this.router.navigateByUrl("/ProfilCoach/CoachDashbord")
+        else
           this.router.navigateByUrl("/userProfil/userDashbord")
-          this.dialogRef.close();
-         } else {
+        this.dialogRef.close();
+      } else {
 
-         }
-     })
+      }
+    })
   }
 
-  signup(email : any , password : any){
-    this.auth.register(email , password).subscribe((data : any)=>{
+  signup(email: any, password: any) {
+    this.auth.register(email, password).subscribe((data: any) => {
       console.log(data)
-        if(data.token) {
-          localStorage.setItem("token" , data.token)
-          this.router.navigateByUrl("/createUser/Personal")
-          this.dialogRef.close();
-        } else {
-         
-        }
+      if (data.token) {
+        localStorage.setItem("token", data.token)
+        this.router.navigateByUrl("/createUser/Personal")
+        this.dialogRef.close();
+      } else {
+
+      }
     })
- }
+  }
 }
