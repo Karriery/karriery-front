@@ -79,6 +79,7 @@ import { CreateCoachCareeInformationComponent } from './templates/create-coach-c
 import { CreateCoachSuccessComponent } from './templates/create-coach-success/create-coach-success.component';
 import { CreateCoachVerifComponent } from './templates/create-coach-verif/create-coach-verif.component';
 import { CreateCoachPersonalInformationComponent } from './templates/create-coach-personal-information/create-coach-personal-information.component';
+import { VideoComponent } from './templates/video/video.component';
 
 @NgModule({
   declarations: [
@@ -147,6 +148,7 @@ import { CreateCoachPersonalInformationComponent } from './templates/create-coac
     CreateCoachSuccessComponent,
     CreateCoachVerifComponent,
     CreateCoachPersonalInformationComponent,
+    VideoComponent,
   ],
   imports: [
     BrowserModule,
