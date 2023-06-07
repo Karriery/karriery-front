@@ -117,7 +117,7 @@ const routes: Routes = [
     ],
   },
   {
-    path: "createUser",
+    path: "createCoach",
     component: CreateCoachComponent,
     children: [
       { path: "CareeInformation", component: CreateCoachCareeInformationComponent},
@@ -127,7 +127,7 @@ const routes: Routes = [
       },
       
       {
-        path: "VerificationPayment",
+        path: "Verification",
         component: CreateCoachVerifComponent,
       },
       {

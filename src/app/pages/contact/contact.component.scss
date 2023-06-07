@@ -1,0 +1,220 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+  }
+  .left-box{
+    width: 9%;
+    min-height: 100vh;
+    background-color: WH;
+    position: absolute;
+    border-right: 1px solid #d53647;
+  }
+  .left-box .logo{
+    position: absolute;
+    top: 2%;
+    right:0.5%;
+    min-width: 50px;
+  }
+  .left-box .logo img{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .red-box {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #d53647;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .content {
+    height: 100px;
+    
+  }
+  .content h1{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 0.8px;
+  }
+  .content p{
+    font-size: 20px;
+    margin-left: 0.8px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    color: black;
+    font-weight: 420;
+    font-family: 'Montserrat', sans-serif;
+    width:52%;
+    white-space: wrap;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+  .inputs-container{
+    min-height: 100vh;
+    display: grid;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 9%;
+    /* border-left: 1px solid #d53647; */
+  }
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-start;
+  
+    margin-left: 1px;
+  }
+  
+  input{
+    margin-bottom: 60px;
+    min-width: 600px;
+    min-height: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(128, 127, 127);
+    outline: none;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: black;
+  
+  }
+  ::placeholder{
+    color: black;
+    font-size: 19px;
+    font-weight: 450;   
+    opacity: 100%;
+  }
+  
+  .menubg
+  {
+    background-color: #d53647;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 65px;
+    min-height: 60px;
+  }
+  .menu{
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 45px;
+    min-height: 45px;
+    
+  }
+  .btn{
+    min-width: 170px;
+    min-height: 40px;
+    background-color: #bd3141;
+    border: none;
+    border-radius:10px;
+    color: white;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    margin-left: 5px;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+  .grey-box{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 485px;
+    min-height: 400px;
+    background-color: #3a4040;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: fex-start;
+    align-items: flex-start;
+    padding: 60px;
+  }
+  .grey-box h1{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+  }
+  
+  .grey-box .infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+  
+  .grey-box img {
+    width: 30px;
+    height: 30px;
+    margin-right: 45px;
+  }
+  .grey-box .info{
+    margin-top: 50px;
+  }
+  .grey-box .infos p {
+    display: inline;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 320;
+    font-family: 'Montserrat', sans-serif;    
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    position: relative;
+    bottom: 10px;
+  }
+  .red-box #reseau{
+    position: absolute;
+    bottom:21.5%;
+    left: 25%;
+    width: 130px; 
+  }
+  
+  @media only screen and (max-width: 768px) {
+  .content h1{
+    font-size: 35px;
+  }
+  .content p{
+    font-size: 18px;
+    width: 60%;}
+  
+    .grey-box{
+        width: 180px;
+        min-height: 450px;
+        padding: 40px;
+    }
+    .grey-box h1{
+        font-size: 35px;
+    }
+    
+      .grey-box .infos p {
+        font-size: 12px;
+      }
+      .grey-box img {
+        width: 25px;
+        height: 25px;
+      }
+      
+      .red-box #reseau{
+        position: absolute;
+        bottom:25.5%;
+        left: 25%;
+        width: 130px; 
+      }
+      .left-box .logo{
+        position: absolute;
+        top: 2%;
+        right:0.5%;
+        min-width: 50px;
+    }
+    input{
+        min-width: 450px;
+    }
+      .inputs{
+          width: 50%;
+      }
+    }
