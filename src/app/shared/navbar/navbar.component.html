@@ -16,9 +16,18 @@
 
       <div (click)="toContact()" ngClass="hover">Contact</div>
 
-      <div class="contPhone" (click)="login()">
-        <img src="./../../../assets/enter.gif" />Connexion
+      <div>      
+        <div *ngIf="!loggedin; else elseBlock" class="contPhone" (click)="login()">
+          <img src="./../../../assets/enter.gif" />Connexion
+        </div>
+        <ng-template  #elseBlock>
+           <a class="username" [routerLink]="['userProfil/userDashbord']" >{{ username }}</a>
+           <div class="contPhone" (click)="logout()">
+            <img src="./../../../assets/enter.gif" />
+          </div>
+        </ng-template>
       </div>
+
     </div>
 
     <div class="drop-down-toggle">
