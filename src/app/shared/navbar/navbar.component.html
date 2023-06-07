@@ -1,5 +1,5 @@
 
-<div class="navbar-container" (scroll)="onScroll($event)" [@cardAnimation]>
+<div id="nav" class="navbar-container" (scroll)="onScroll($event)" [@cardAnimation]>
   <div class="divbar">
     <div class="logo" ngTilt>
       <img src="./../../../assets/logo_red.png" alt="logo" />
@@ -14,7 +14,7 @@
 
       <div (click)="toTemoignage()" ngClass="hover">En savoir plus</div>
 
-      <div (click)="toContact()" ngClass="hover">Contact</div>
+      <div ngClass="hover"><a [routerLink]="['contact']"> Contact </a></div>
 
       <div>      
         <div *ngIf="!loggedin; else elseBlock" class="contPhone" (click)="login()">
